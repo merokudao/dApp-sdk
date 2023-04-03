@@ -23,7 +23,7 @@ users, as well as group chats and broadcasting functionality.
 
 3. **Payments:** A robust and secure payment module for handling cryptocurrency 
 transactions, including support for multiple tokens and seamless integration with popular 
-wallet providers. Supports Recussing, Seat Based or One Time payment. Integrated with the
+wallet providers. Supports Recurring, Seat Based or One Time payment. Integrated with the
 dApp Store Fee module.
 
 
