@@ -56,7 +56,7 @@ delivery to users worldwide.
 
 # Usage
 
-The dApp SDK is designed to be used across a variety of platforms like - web, iOS and 
+The dApp SDK is designed to be used across a variety of platforms like - web (browser), NodeJS, iOS and 
 android. The specific of usage for each component is available in the respective docs. 
 More specific docs around usage and implementation is available in the [docs](/docs) directory.
 
