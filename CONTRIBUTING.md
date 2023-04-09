@@ -15,6 +15,18 @@ with the community follow the guidelines outlined in the Code of Conduct.
 
 ## Getting Started
 
+If you're contributing to this repo, you are a **Development Partner**. i.e. You are from a 
+projects that want to build open-source features (Payments, Messaging, Recommendations, Analytics) for dApp Store Kit.
+
+At a high level, you're expected to do following
+
+1. Add code example for your project in the [examples](/examples) directory. 
+2. Add relevant documentation for your project in the [docs](/docs) directory. 
+3. Update the availability of your project in the frameworks at [docs/README.md](docs/README.md) file.
+
+The detailed steps to do so are following:
+
+
 1. **Fork the repository:** To start contributing, fork the dApp SDK repository to your own GitHub account.
 
 2. **Clone your fork:** Clone your fork to your local machine:
