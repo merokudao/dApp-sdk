@@ -23,7 +23,7 @@ authentication, authorization, and user profile management in a decentralized ma
 3. **Messaging:** An encrypted messaging system enabling peer-to-peer communication between 
 users, as well as group chats and broadcasting functionality and advanced functionality like token gating, nft gating, message gating, etc.
 
-4. **Social Communitcation:** A peer-to-peer communication module that enables wallet to do video calls, audio calls, twitter spaces, youtube live functionality to enable pure web3 native communication.
+4. **Social Communication:** A peer-to-peer communication module that enables wallet to do video calls, audio calls, twitter spaces, youtube live functionality to enable pure web3 native communication.
 
 5. **Payments:** A robust and secure payment module for handling cryptocurrency 
 transactions, including support for multiple tokens and seamless integration with popular 
