@@ -2,6 +2,7 @@
 
 | Module       | Partner   | Browser      | NodeJS       | Android               | iOS                   | Unity | Example                                                                                                |
 | :----------- | :-------- | :----------- | :----------- | :-------------------- | :-------------------- | :---- | :----------------------------------------------------------------------------------------------------- |
+| Payments     | XION      | 👍 (via API)  | 👍 (via API)  | 👍 (via API)          | 👍 (via API)         | 👍      | [../examples/XION/](../examples/XION/)                                                              |
 | Storage      | Fleek.xyz | 🚫           | 👍           | 🚫                    | 🚫                    | 🚫    |                                                                                                        |
 | Messaging    | Push      | 👍           | 👍           | 👍                    | 👍                    | 🚫    | [../examples/push/](../examples/push/)                                                                 |
 | Messaging    | XMTP      | 👍           | 👍           | 👍                    | 👍                    | 🚫    |                                                                                                        |
