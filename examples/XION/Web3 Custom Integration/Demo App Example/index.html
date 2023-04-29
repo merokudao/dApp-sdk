@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xion Web3 Custom Integration Example (NFT Purchase)</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.6.1/dist/web3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/ethers@5.6.0/dist/ethers.min.js"></script>
+</head>
+<body>
+    <h1>Xion Web3 Custom Integration Example (NFT Purchase)</h1>
+    <div class="nft-container">
+        <div class="img-container">
+            <img class="img" src="Xion_Astronaut.png" alt="NFT Image" />
+          </div>          
+        <h2>Astronaut NFT</h2>
+        <label for="price">Enter USD Amount:</label>
+        <input type="number" id="price" step="0.01">
+        <p>Default Currency: USDT</p>
+        <button id="connect-wallet">Connect Wallet</button>
+        <button id="approve-usdt" disabled>Approve USDT</button>
+        <button id="pay-now" disabled>Pay Now</button>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
