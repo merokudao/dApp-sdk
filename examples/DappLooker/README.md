@@ -15,7 +15,7 @@ DappLooker is a web3 no-code analytics platform that allows for the analysis of 
 
 ## Important Links
 [Discover Analysis](https://dapplooker.com/browse/dashboards?sort=popular)<br />
-[Documentation](https://dapplooker.notion.site/dapplooker/Dapplooker-Documentation-f3113336bdce4ecea688fa0ba69cec98)
+[Documentation](https://dapplooker.notion.site/dapplooker/Dapplooker-Documentation-f3113336bdce4ecea688fa0ba69cec98)<br />
 [Network Integration](https://dapplooker.com/integration)<br />
 [Ecosystem Partners](https://dapplooker.com/#partner)
 
