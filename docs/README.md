@@ -10,4 +10,5 @@
 | Applications | thirdweb  | 👍           | 👍           | 👍 (via React Native) | 👍 (via React Native) | 👍    | [../examples/thirdweb/applications-usage-examples/](../examples/thirdweb/applications-usage-examples/) |
 | Solidity     | thirdweb  | 👍           | 👍           | 👍 (via React Native) | 👍 (via React Native) | 👍    | [../examples/thirdweb/solidity-sdk-usage-examples/](../examples/thirdweb/solidity-sdk-usage-examples/) |
 | Analytics     | Spindl  | 👍           | 👍           |🚫 | 🚫 | 🚫    | [../examples/Spindl/](../examples/Spindl/) |
-| GameFi Infra     | LYNC      | 👍  | 🚫   | 👍           | 👍          | 👍      | [../examples/LYNC/](../examples/LYNC/)
+| GameFi Infra     | LYNC      | 👍  | 🚫   | 👍           | 👍          | 👍      | [../examples/LYNC/](../examples/LYNC/) |
+| Analytics     | W3W      | 👍  | 🚫   | 🚫           | 🚫          | 🚫      | [../examples/W3W/](../examples/W3W/)
