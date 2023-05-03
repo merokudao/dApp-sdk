@@ -1,6 +1,8 @@
 # Decent Protocol
 ## From smart contracts to no-code interfaces, Decent offers everything you need to easily build full stack NFT applications.
 
+![](https://nftstorage.link/ipfs/QmYZiEznp7sFYztdF5o798nR9ftoCX4Hw7QVoXXBJrUhcX)
+
 ## What is Decent?
 
 Decent is an NFT creation and infrastructure tool that enables creators and developers to launch, edit, and analyze their NFT-based applications.  We have a multi-chain protocol, SDK, APIs, and a no-code application to make building and management as easy as possible.
