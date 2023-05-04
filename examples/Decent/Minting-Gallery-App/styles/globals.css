@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.diplay-wallet {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+::-moz-selection { background-color: #F1E7FC; 
+  color: #730FE6; } 
+  ::selection { background-color: #F1E7FC; 
+  color: #730FE6; }
+
+audio::-webkit-media-controls-start-playback-button {
+  display: none;
+}
+
+audio::-webkit-media-controls-end-playback-button {
+  display: none;
+}
+
+audio::-webkit-media-controls-play-button {
+  display: block;
+}
+
+audio::-webkit-media-controls-pause-button {
+  display: none;
+}
+
+audio::-webkit-media-controls-current-time-display {
+  display: none;
+}
+
+audio::-webkit-media-controls-time-remaining-display {
+  display: none;
+}
