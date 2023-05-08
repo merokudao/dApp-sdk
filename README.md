@@ -56,10 +56,12 @@ The dApp SDK offers the following key components:
 
 13. **Applications:** The Applications module offers SDKs for a range of programming languages, such as React, React Native, TypeScript, Python, Go, and Unity.
 
+14. **Gamification:** Multi-platform solutions to support every type of gaming enthusiast, Ready is spearheading the collective web3 gaming era.
+
 # Usage
 
 The dApp SDK is designed to be used across a variety of platforms like - web (browser), NodeJS, iOS and
-android. The specific of usage for each component is available in the respective docs.
+Android. The specific of usage for each component is available in the respective docs.
 More specific docs around usage and implementation is available in the [docs](/docs) directory.
 
 ## Examples
