@@ -1,27 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Xion Web3 Custom Integration Example (NFT Purchase)</title>
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Astronaut NFT</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
     <script src="https://cdn.jsdelivr.net/npm/web3@1.6.1/dist/web3.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/ethers@5.6.0/dist/ethers.min.js"></script>
-</head>
-<body>
-    <h1>Xion Web3 Custom Integration Example (NFT Purchase)</h1>
-    <div class="nft-container">
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">Astronaut NFT (In-Game Asset)</h1>
+      <div class="nft-container">
         <div class="img-container">
-            <img class="img" src="Xion_Astronaut.png" alt="NFT Image" />
-          </div>          
-        <h2>Astronaut NFT</h2>
-        <label for="price">Enter USD Amount:</label>
-        <input type="number" id="price" step="0.01">
-        <p>Default Currency: USDT</p>
-        <button id="connect-wallet">Connect Wallet</button>
-        <button id="approve-usdt" disabled>Approve USDT</button>
-        <button id="pay-now" disabled>Pay Now</button>
+          <img class="nft-image" src="Xion Legend static.png" alt="NFT Image" />
+        </div>
+        <h2 class="nft-title">Price: 0.50 USDT (Polygon)</h2>
+        <button class="btn" id="connect-wallet">Connect Wallet</button>
+        <button class="btn" id="approve-and-pay" disabled>
+          Approve and Pay
+        </button>
+        <!-- Spinner pop-up -->
+        <div class="popup" id="spinner-popup">
+          <div class="popup-content">
+            <h2 class="popup-title">Processing Transaction</h2>
+            <div class="spinner"></div>
+          </div>
+        </div>
+
+        <!-- Success pop-up -->
+        <div class="popup" id="success-popup">
+          <div class="popup-content">
+            <h2 class="popup-title">Purchase Successful!</h2>
+            <p id="transaction-info"></p>
+          </div>
+        </div>
+      </div>
     </div>
     <script src="scripts.js"></script>
-</body>
+  </body>
 </html>
