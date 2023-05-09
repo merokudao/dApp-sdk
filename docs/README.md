@@ -11,7 +11,9 @@
 | Solidity     | Decent    | 👍           | 👍           | 👍 (via React Native) | 👍 (via React Native) | 🚫    | [../examples/decent/](../examples/decent)                                                              |
 | Applications | thirdweb  | 👍           | 👍           | 👍 (via React Native) | 👍 (via React Native) | 👍    | [../examples/thirdweb/applications-usage-examples/](../examples/thirdweb/applications-usage-examples/) |
 | Solidity     | thirdweb  | 👍           | 👍           | 👍 (via React Native) | 👍 (via React Native) | 👍    | [../examples/thirdweb/solidity-sdk-usage-examples/](../examples/thirdweb/solidity-sdk-usage-examples/) |
+
 | Analytics    | Spindl    | 👍           | 👍           |🚫 | 🚫 | 🚫    | [../examples/Spindl/](../examples/Spindl/) |
 | GameFi Infra | LYNC      | 👍  | 🚫   | 👍           | 👍          | 👍      | [../examples/LYNC/](../examples/LYNC/)
 | Gamification | GetReady  | 👍 (via API) | 👍 (via API) | 👍 (via API)          | 👍 (via API)          | 👍    | [../examples/getready/](../examples/getready/)
 | Payments | Transak  | 👍  | 🚫  | 👍           | 👍           | 🚫    | [../examples/transak/](../examples/transak/)                                                          |
+| Analytics    | DappLooker| 👍           | 👍(via API)        |🚫 | 🚫 | 🚫    | [../examples/DappLooker/](../examples/DappLooker/) |
