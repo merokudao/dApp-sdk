@@ -85,38 +85,33 @@ const getWeb3 = async () => {
 };
 
 async function connectWallet() {
-    try {
-      const web3 = await getWeb3()
-      const userAddressList = await web3.eth.requestAccounts();
-      userAddress = userAddressList[0]
-      console.log("Connected:", userAddress);
-      const connectWalletButton = document.getElementById("connect-wallet");
-      connectWalletButton.textContent = "Connected";
-      connectWalletButton.style.backgroundColor = "green";
-      document.getElementById("approve-usdt").disabled = false;
-    } catch (error) {
-      console.error("Error connecting wallet:", error);
-      alert("Error connecting wallet. Please try again.");
-    }
-  document
-    .getElementById("approve-usdt")
-    .addEventListener("click", approveUSDT);
+  try {
+    const web3 = await getWeb3();
+    const userAddressList = await web3.eth.requestAccounts();
+    userAddress = userAddressList[0];
+    console.log("Connected:", userAddress);
+    const connectWalletButton = document.getElementById("connect-wallet");
+    connectWalletButton.textContent = "Connected";
+    connectWalletButton.style.backgroundColor = "green";
+    document.getElementById("approve-and-pay").disabled = false;
+  } catch (error) {
+    console.error("Error connecting wallet:", error);
+    alert("Error connecting wallet. Please try again.");
+  }
 }
 
-async function approveUSDT() {
-  const web3 = await getWeb3()
-  const usdtContract = new web3.eth.Contract(contractAbi, contractAddress);
-  const priceInput = document.getElementById("price");
-  const price = priceInput.value;
-  if (!price || parseFloat(price) <= 0) {
-    alert("Please enter a valid USD amount.");
-    return;
-  }
-  const usdtValue = web3.utils.toWei(price, "mwei");
+async function approveAndPay() {
   try {
+    showSpinner(); // Show spinner before starting transaction
+
+    const web3 = await getWeb3();
+    const usdtContract = new web3.eth.Contract(contractAbi, contractAddress);
+    const price = "0.5";
+    const usdtValue = web3.utils.toWei(price, "mwei");
     const allowance = await usdtContract.methods
       .allowance(userAddress, xgWalletAddress)
       .call();
+
     if (Number(allowance) < Number(usdtValue)) {
       const tx = await usdtContract.methods
         .approve(
@@ -125,36 +120,16 @@ async function approveUSDT() {
         )
         .send({ from: userAddress });
       console.log("USDT approval tx:", tx);
-      alert("USDT approval successful!");
     } else {
       console.log("Already approved USDT");
-      alert("USDT already approved");
     }
-    document.getElementById("pay-now").disabled = false;
-  } catch (error) {
-    console.error("Error approving USDT:", error);
-    alert("Error approving USDT. Please try again.");
-  }
-}
 
-async function payNow() {
-  const priceInput = document.getElementById("price");
-  const price = priceInput.value;
-
-  if (!price || parseFloat(price) <= 0) {
-    alert("Please enter a valid USD amount.");
-    return;
-  }
-
-  //const usdtValue = Web3.utils.toWei(price, "mwei");
-
-  try {
     const response = await fetch(apiUrl, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
         Authorization: `Bearer ${apiKey}`,
-        "Accept": "application/json",
+        Accept: "application/json",
       },
       body: JSON.stringify({
         productName: "NFT",
@@ -165,22 +140,90 @@ async function payNow() {
     });
 
     const responseData = await response.json();
+    hideSpinner(); // Hide spinner after transaction is done
 
-    if (responseData.status === "successful") {
+    if (responseData.status === "successful" && responseData.orderCode) {
       console.log("Payment successful:", responseData);
-      alert("Payment successful!");
+      if (responseData.transactionHash) {
+        showSuccessPopup(responseData.transactionHash, responseData.orderCode);
+      } else {
+        console.warn(
+          "Payment successful, but no transaction hash found:",
+          responseData
+        );
+        alert(
+          "Payment successful, but no transaction hash found. Please check your wallet or contact support."
+        );
+      }
     } else {
       console.error("Payment error:", responseData);
       alert("Payment failed. Please try again.");
     }
   } catch (error) {
-    console.error("Error processing payment:", error);
-    alert("Error processing payment. Please try again.");
+    hideSpinner(); // Hide spinner if an error occurs
+    console.error("Error processing approval/payment:", error);
+    alert("Error processing approval/payment. Please try again.");
+  }
+}
+
+function showSpinner() {
+  const spinner = document.createElement("div");
+  spinner.id = "spinner";
+  spinner.style.position = "fixed";
+  spinner.style.top = "50%";
+  spinner.style.left = "50%";
+  spinner.style.transform = "translate(-50%, -50%)";
+  spinner.style.zIndex = "1000";
+  spinner.innerHTML = `
+    <div style="width:100%;height:0;padding-bottom:99%;position:relative;"><iframe src="https://giphy.com/embed/nyneLmwIht0uKvefIq" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/new-digital-tigdesign-nyneLmwIht0uKvefIq">via GIPHY</a></p>
+  `;
+  document.body.appendChild(spinner);
+}
+
+function hideSpinner() {
+  const spinner = document.getElementById("spinner");
+  if (spinner) {
+    document.body.removeChild(spinner);
+  }
+}
+
+function showSuccessPopup(txHash, orderCode) {
+  const successPopup = document.createElement("div");
+  successPopup.id = "success-popup";
+  successPopup.style.position = "fixed";
+  successPopup.style.top = "50%";
+  successPopup.style.left = "50%";
+  successPopup.style.transform = "translate(-50%, -50%)";
+  successPopup.style.zIndex = "1000";
+  successPopup.style.backgroundColor = "white";
+  successPopup.style.borderRadius = "5px";
+  successPopup.style.padding = "1rem";
+  successPopup.style.maxWidth = "90%"; // Make it responsive
+  successPopup.style.textAlign = "center"; // Center the content within the popup
+  successPopup.innerHTML = `
+    <h3 style="color:green;">Purchase Successful</h3>
+    <p>Transaction Hash: <a href="https://polygonscan.com/tx/${txHash}" target="_blank">Txhash</a></p>
+    <p>Order Code: ${orderCode}</p>
+    <button id="close-popup-btn">Close</button>
+  `;
+  document.body.appendChild(successPopup);
+
+  // Add event listener for the close button
+  document
+    .getElementById("close-popup-btn")
+    .addEventListener("click", closeSuccessPopup);
+}
+
+function closeSuccessPopup() {
+  const successPopup = document.getElementById("success-popup");
+  if (successPopup) {
+    successPopup.remove(); // Use 'remove' instead of 'removeChild'
   }
 }
 
 document
   .getElementById("connect-wallet")
   .addEventListener("click", connectWallet);
-document.getElementById("approve-usdt").addEventListener("click", approveUSDT);
-document.getElementById("pay-now").addEventListener("click", payNow);
+document
+  .getElementById("approve-and-pay")
+  .addEventListener("click", approveAndPay);
