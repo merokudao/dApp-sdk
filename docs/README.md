@@ -16,3 +16,4 @@
 | Gamification | GetReady  | 👍 (via API) | 👍 (via API) | 👍 (via API)          | 👍 (via API)          | 👍    | [../examples/getready/](../examples/getready/)
 | Payments | Transak  | 👍  | 🚫  | 👍           | 👍           | 🚫    | [../examples/transak/](../examples/transak/)|
 | Analytics    | DappLooker| 👍           | 👍(via API)        |🚫 | 🚫 | 🚫    | [../examples/DappLooker/](../examples/DappLooker/) |
+| Analytics    | W3W       | 👍  | 🚫   | 🚫           | 🚫          | 🚫      | [../examples/W3W/](../examples/W3W/) |
