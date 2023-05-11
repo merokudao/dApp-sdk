@@ -17,3 +17,4 @@
 | Payments | Transak  | 👍  | 🚫  | 👍           | 👍           | 🚫    | [../examples/transak/](../examples/transak/)|
 | Analytics    | DappLooker| 👍           | 👍(via API)        |🚫 | 🚫 | 🚫    | [../examples/DappLooker/](../examples/DappLooker/) |
 | Analytics    | W3W       | 👍  | 🚫   | 🚫           | 🚫          | 🚫      | [../examples/W3W/](../examples/W3W/) |
+| Ramps Widget | MoonPay   | 👍           | 🚫           | 👍                    | 👍                    | 🚫    | [../examples/MoonPay/](../examples/MoonPay/) |
