@@ -36,26 +36,26 @@ A core concept here is the *trust* that must exist between a Verifier and an Iss
 
 You can follow these links and understand how to:
 
-[Setup issuer node](https://0xpolygonid.github.io/tutorials/issuer-node/issuer-node-guide/)
-[Run a verifier](https://0xpolygonid.github.io/tutorials/verifier/verification-library/verifier-set-up/#verifier-client-setup)
-[Check our smart contracts](https://0xpolygonid.github.io/tutorials/contracts/overview/)
-[Use our mobile SDK plugin](https://0xpolygonid.github.io/tutorials/wallet/wallet-sdk/polygonid-sdk/polygonid-sdk-plugin/)
-[Create a browser wallet demo](https://0xpolygonid.github.io/tutorials/js-sdk/js-sdk-browser-wallet-demo/)
+- [Setup issuer node](https://0xpolygonid.github.io/tutorials/issuer-node/issuer-node-guide/)
+- [Run a verifier](https://0xpolygonid.github.io/tutorials/verifier/verification-library/verifier-set-up/#verifier-client-setup)
+- [Check our smart contracts](https://0xpolygonid.github.io/tutorials/contracts/overview/)
+- [Use our mobile SDK plugin](https://0xpolygonid.github.io/tutorials/wallet/wallet-sdk/polygonid-sdk/polygonid-sdk-plugin/)
+- [Create a browser wallet demo](https://0xpolygonid.github.io/tutorials/js-sdk/js-sdk-browser-wallet-demo/)
 
 ## Demos and dApps
 
-[Polygon ID demo issuer](https://issuer-demo.polygonid.me/)
-[Polygon ID refernce app iOS](https://apps.apple.com/us/app/polygon-id/id1629870183)
-[Polygon ID refernce app Android](https://play.google.com/store/apps/details?id=com.polygonid.wallet&pli=1)
-[Polygon ID demo verifier](https://verifier-demo.polygonid.me/)
+- [Polygon ID demo issuer](https://issuer-demo.polygonid.me/)
+- [Polygon ID refernce app iOS](https://apps.apple.com/us/app/polygon-id/id1629870183)
+- [Polygon ID refernce app Android](https://play.google.com/store/apps/details?id=com.polygonid.wallet&pli=1)
+- [Polygon ID demo verifier](https://verifier-demo.polygonid.me/)
 
 ## Other important Links
 
-[Polygon ID website](https://polygon.technology/polygon-id)
-[Polygon ID GitHub](https://github.com/0xPolygonID)
-[Polygon ID docs](https://0xpolygonid.github.io/tutorials/)
-[Polygon ID ecosystem](https://ecosystem.polygon.technology/PolygonID/)
-[Learn ID](https://www.youtube.com/playlist?list=PLslsfan1R_z2PW_cRkBumQiUJs4tPc455)
+- [Polygon ID website](https://polygon.technology/polygon-id)
+- [Polygon ID GitHub](https://github.com/0xPolygonID)
+- [Polygon ID docs](https://0xpolygonid.github.io/tutorials/)
+- [Polygon ID ecosystem](https://ecosystem.polygon.technology/PolygonID/)
+- [Learn ID](https://www.youtube.com/playlist?list=PLslsfan1R_z2PW_cRkBumQiUJs4tPc455)
 
 ###### Polygon ID and Iden3
 
