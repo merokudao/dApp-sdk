@@ -19,3 +19,4 @@
 | Analytics    | DappLooker| 👍           | 👍(via API)        |🚫 | 🚫 | 🚫    | [../examples/DappLooker/](../examples/DappLooker/) |
 | Analytics    | W3W       | 👍  | 🚫   | 🚫           | 🚫          | 🚫      | [../examples/W3W/](../examples/W3W/) |
 | Identity     | PolygonID | 👍 (issuer via JS SDK + wallet via JS SDK + issuer UI) | 🚫 | 👍 (SDK via Flutter + reference app via Flutter) | 👍 (reference app via Flutter) | 🚫 | [../examples/PolygonID/](../examples/PolygonID/) | 
+| Ramps Widget | MoonPay   | 👍           | 🚫           | 👍                    | 👍                    | 🚫    | [../examples/MoonPay/](../examples/MoonPay/) |
