@@ -1,11 +1,11 @@
 
 # Onmeta
 
-[Onmeta](https://www.onmeta.in/) provides the underlying infrastructure that allows DeFi companies, Web3 Gaming companies, NFT marketplaces & other Dapps to allow their end users to exchange fiat currency for crypto tokens and crypto tokens for fiat currency.
+[Onmeta](https://www.onmeta.in/) provides the underlying infrastructure that allows Crypto wallets, Web3 Gaming platforms, Defi Platforms,  NFT marketplaces & other Dapps to allow their end users to exchange fiat currency for crypto tokens and crypto tokens for fiat currency.
 
 ## Product Overview
 
-Onmeta provides quickest on and off ramp solutions (Widget/API integration) to web3 dapps to help them improve their user experience and accelerate their adoption by mainstream users. Onmeta aims to become a fully interoperable solution which supports all major fiat currencies as well as all tokens across all major blockchains. Currently, focussed on emerging markets like India & SEA, Onmeta is the only service provider supporting INR fiat on and off ramp. It supports 5000+ tokens across Polygon, Ethereum, Arbitrum, Avalanche, Fantom and BNB Smart Chain blockchains with work underway for supporting 25+ blockchains by the end of this year. It has 40+ dApps currently using its solution and has processed USD 1M worth of transactions.
+Onmeta provides quickest on and off ramp solutions (Widget/API integration) to web3 dapps to help them improve their user experience and accelerate their adoption by mainstream users. Onmeta aims to become a fully interoperable solution which supports all major fiat currencies as well as all tokens across all major blockchains. It supports 6000+ tokens across Polygon, Ethereum, Arbitrum, Avalanche, Fantom, ZkEvm, Solana, Optimism and BNB Smart Chain blockchains with work underway for supporting 25+ blockchains by the end of this year. 
 
 We support the following integration methods for our services i.e. both On and Off Ramp. 
 1. Widget Integration
@@ -17,7 +17,7 @@ We support the following integration methods for our services i.e. both On and O
 ### On-ramping
 
 One click checkout solution allows your user to purchase tokens without even leaving your platform. Whitelist API & SDK based widget integration available. <br />
-Demo: [Purchasing PS1 with Onmeta](https://youtu.be/bp1C43jTI9o)
+Demo: [Buy any $token via Onmeta](https://youtu.be/Ejj_B7Kox5k)
 
 
 ### Off-ramping
@@ -119,10 +119,15 @@ We provide multiple API's across all stages of an on/off - ramp transaction.
 
 
 > **Note**
-You receive the x-api-key and Authorization header values used in above requests, upon integrating with Onmeta and making an account in the Onmeta dashboard.
+You receive the x-api-key and Authorization header values used in above requests, upon integrating with Onmeta and making an account in the [Onmeta dashboard](https://stg.dashboard.onmeta.in).
 
 ## Docs
 For more API's and amazing features across widget, take a look :
 [Onmeta Docs](https://docs.onmeta.in)
+
+
+> **Note**
+> <br />
+> Contact nirmal@onmeta.in for integration/enquiry
 
 
