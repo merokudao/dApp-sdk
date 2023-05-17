@@ -5,7 +5,14 @@
 
 ## Product Overview
 
-Onmeta provides quickest on and off ramp solutions (API/widget integration) to web3 dapps to help them improve their user experience and accelerate their adoption by mainstream users. Onmeta aims to become a fully interoperable solution which supports all major fiat currencies as well as all tokens across all major blockchains. Currently, focussed on emerging markets like India & SEA, Onmeta is the only service provider supporting INR fiat on and off ramp. It supports 5000+ tokens across Polygon, Ethereum, Arbitrum, Avalanche, Fantom and BNB Smart Chain blockchains with work underway for supporting 25+ blockchains by the end of this year. It has 40+ dApps currently using its solution and has processed USD 1M worth of transactions.
+Onmeta provides quickest on and off ramp solutions (Widget/API integration) to web3 dapps to help them improve their user experience and accelerate their adoption by mainstream users. Onmeta aims to become a fully interoperable solution which supports all major fiat currencies as well as all tokens across all major blockchains. Currently, focussed on emerging markets like India & SEA, Onmeta is the only service provider supporting INR fiat on and off ramp. It supports 5000+ tokens across Polygon, Ethereum, Arbitrum, Avalanche, Fantom and BNB Smart Chain blockchains with work underway for supporting 25+ blockchains by the end of this year. It has 40+ dApps currently using its solution and has processed USD 1M worth of transactions.
+
+We support the following integration methods for our services i.e. both On and Off Ramp. 
+1. Widget Integration
+2. API Integration
+
+
+
 
 ### On-ramping
 
@@ -19,10 +26,11 @@ One click withdrawal solution allows your users to convert their tokens in fiat 
 Demo: [Off-Ramp with Onmeta: MATIC to INR in a minute](https://www.youtube.com/watch?v=Hz7vw13uR2k)
 
 
-## WIDGET
-
-MoonPay's SDK simplifies the process of integrating MoonPay's widget into a partner's platform. The SDK allows partners to customize the widget's appearance and functionality, while also providing a communication channel for streamlined integration. One of the key benefits of the SDK is the ability to receive real-time notifications about important flow lifecycle events. This allows partners to provide an integrated sell flow where the MoonPay widget instructs the partner's wallet app to perform the necessary sell deposit.
-
+### Widget
+Onmeta's cryptocurrency widget is a versatile solution that enables businesses to quickly and easily integrate cryptocurrency buying and selling into their platforms. We support multiple currencies - INR (Indian National Rupee) and PHP (Philippine peso)
+and hence provide multiple payment channels. <br />
+	UPI, IMPS, NEFT - INR <br />
+	GCASH, PAYMAYA, GRABPAY - PHP 
 
 ## Example
 
@@ -62,7 +70,7 @@ createWidget.on(eventType, callbackFn); // this method will listen to the events
 
 ## API
 Onmeta also provides API support for on-ramp/off-ramp.
-We provide multiple API's to do 
+We provide multiple API's across all stages of an on/off - ramp transaction.
 
 ## Example
 
