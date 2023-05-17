@@ -28,7 +28,7 @@ MoonPay's SDK simplifies the process of integrating MoonPay's widget into a part
 
 Given below are the integration steps to embed the widget in your website : 
 
-1. Add the MoonPay SDK as a script to your HTML file:
+1. Add the Onmeta sdk script tag to your HTML file:
 
 ```HTML
 <script src="https://stg.platform.onmeta.in/onmeta-sdk.js"></script>
@@ -72,10 +72,10 @@ We provide multiple API's to do
 
 `POST https://stg.api.onmeta.in/v1/orders/create`
 
-   curl --location --request POST 'https://stg.api.onmeta.in/v1/orders/create' \
---header 'Accept: application/json' \
---header 'x-api-key: string' \
---data-raw '{"buyTokenSymbol":"string","chainId":"string","fiatCurrency":"string","fiatAmount":"string","buyTokenAddress":"string","receiverAddress":"string"}'
+	   curl --location --request POST 'https://stg.api.onmeta.in/v1/orders/create' \
+	--header 'Accept: application/json' \
+	--header 'x-api-key: string' \
+	--data-raw '{"buyTokenSymbol":"string","chainId":"string","fiatCurrency":"string","fiatAmount":"string","buyTokenAddress":"string","receiverAddress":"string"}'
 
 ### Response
     {"success":true,"data":{"orderId":"6464ee5be1277df21b0b3946","receiverWalletAddress":"0xEcc24eab0fb83Ef0c536b35C44C578F750FDBB6E","gasPriceWei":"184300000000","gasUseEstimate":"70000","quote":"1.185862827","fiatCurrency":"inr","fiatAmount":100},"error":{}}↵
@@ -87,11 +87,11 @@ We provide multiple API's to do
 
 `POST https://stg.api.onmeta.in/v1/offramp/orders/create`
 
-   curl --location --request POST 'https://stg.api.onmeta.in/v1/offramp/orders/create' \
---header 'Accept: application/json' \
---header 'x-api-key: string' \
---header 'Authorization: string' \
---data-raw '{"sellTokenSymbol":"string","sellTokenAddress":"string","chainId":"Number","fiatCurrency":"string","fiatAmount":"string","senderWalletAddress":"string","bankDetails":"Object","refundWalletAddress":"string"}'
+	   curl --location --request POST 'https://stg.api.onmeta.in/v1/offramp/orders/create' \
+	--header 'Accept: application/json' \
+	--header 'x-api-key: string' \
+	--header 'Authorization: string' \
+	--data-raw '{"sellTokenSymbol":"string","sellTokenAddress":"string","chainId":"Number","fiatCurrency":"string","fiatAmount":"string","senderWalletAddress":"string","bankDetails":"Object","refundWalletAddress":"string"}'
 
 ### Response
 
@@ -107,7 +107,11 @@ We provide multiple API's to do
         "fiatAmount": 168.23
 	},
 	"error": {}
-}
+	}
+
+
+> **Note**
+You receive the x-api-key and Authorization header values used in above requests, upon integrating with Onmeta and making an account in the Onmeta dashboard.
 
 ## Docs
 For more API's and amazing features across widget, take a look :
