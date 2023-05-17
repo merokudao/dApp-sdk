@@ -20,3 +20,4 @@
 | Analytics    | W3W       | 👍  | 🚫   | 🚫           | 🚫          | 🚫      | [../examples/W3W/](../examples/W3W/) |
 | Identity     | PolygonID | 👍 (issuer via JS SDK + wallet via JS SDK + issuer UI) | 🚫 | 👍 (SDK via Flutter + reference app via Flutter) | 👍 (reference app via Flutter) | 🚫 | [../examples/PolygonID/](../examples/PolygonID/) | 
 | Ramps Widget | MoonPay   | 👍           | 🚫           | 👍                    | 👍                    | 🚫    | [../examples/MoonPay/](../examples/MoonPay/) |
+| Payments     | OnMeta      | 👍 (via Widget)  | 👍 (via API)  | 👍 (via Widget/API)          | 👍 (via Widget/API)         | 🚫   | [../examples/Onmeta/](../examples/Onmeta/)              
