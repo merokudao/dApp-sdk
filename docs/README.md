@@ -24,3 +24,4 @@
 | Solidity | Biconomy | 👍                | 👍           | 👍 (via React Native) | 👍 (via React Native) | 👍 | [../examples/Biconomy/](../examples/Biconomy/) |
 | Payments     | OnMeta      | 👍 (via Widget)  | 👍 (via API)  | 👍 (via Widget/API)          | 👍 (via Widget/API)         | 🚫   | [../examples/Onmeta/](../examples/Onmeta/)              
 | Payments | Poko Onramp Aggregator   | 👍           | 👍 (Quote API)           | 👍 (Android SDK, React Native SDK)                    | 👍 (React Native SDK)                    | 🚫    | [../examples/PokoOnrampAggregator/](../examples/PokoOnrampAggregator/) |
+| Revenue stream | 0xOptimal   | 👍 (via API)           | 👍 (via API)           | 👍 (React Native SDK)                    | 👍 (React Native SDK)                    | 🚫    | [../examples/0xOptimal/](../examples/0xOptimal/) |
