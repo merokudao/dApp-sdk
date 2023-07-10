@@ -1,0 +1,12 @@
+{
+    "name": "dapplooker",
+    "version": "1.0.0",
+    "dependencies": {
+        "typescript": "5.1.3",
+        "@types/react-dom": "18.2.6",
+        "node-fetch": "2.6.12"
+    },
+    "devDependencies": {
+        "@types/node-fetch": "2.6.4"
+    }
+}
