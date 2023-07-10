@@ -1,0 +1,8 @@
+{
+  "name": "messaging",
+  "version": "1.0.0",
+  "license": "MIT",
+  "dependencies": {
+    "@pushprotocol/restapi": "^1.3.9"
+  }
+}
