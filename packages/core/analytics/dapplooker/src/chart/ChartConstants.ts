@@ -5,7 +5,7 @@ class ChartConstants {
     }
 
     public get getChartDetailUrl(): string {
-        return `https://api.dapplooker.com/web/plib/chart`;
+        return `https://api.dapplooker.com/chart`;
     }
 }
 
