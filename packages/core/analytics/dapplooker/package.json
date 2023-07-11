@@ -1,6 +1,6 @@
 {
     "name": "dapplooker-sdk",
-    "version": "0.0.7",
+    "version": "0.0.1",
     "description": "SDK for retrieving DappLooker chart data",
     "author": "DappLooker",
     "license": "MIT",
