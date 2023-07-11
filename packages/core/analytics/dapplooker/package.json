@@ -1,6 +1,32 @@
 {
-    "name": "dapplooker",
-    "version": "1.0.0",
+    "name": "dapplooker-sdk",
+    "version": "0.0.7",
+    "description": "SDK for retrieving DappLooker chart data",
+    "author": "DappLooker",
+    "license": "MIT",
+    "main": "dist/analytics/dapplooker/index.js",
+    "types": "dist/analytics/dapplooker/index.d.ts",
+    "scripts": {
+        "build": "tsc",
+        "prepare": "npm run build"
+    },
+    "keywords": [
+        "dapplooker",
+        "dapplooker sdk",
+        "web3 analytics",
+        "blockchain analytics"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/merokudao/dApp-sdk.git"
+    },
+    "homepage": "https://github.com/merokudao/dApp-sdk.git#readme",
+    "bugs": {
+        "url": "https://github.com/merokudao/dApp-sdk.git/issues"
+    },
+    "files": [
+        "dist/**/*"
+    ],
     "dependencies": {
         "typescript": "5.1.3",
         "@types/react-dom": "18.2.6",

@@ -40,5 +40,3 @@ export class DappLookerChartsAPI extends AnalyticsBase{
         }
     }
 }
-
-export default DappLookerChartsAPI;
