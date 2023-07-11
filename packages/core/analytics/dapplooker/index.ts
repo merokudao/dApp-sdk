@@ -1,1 +1,1 @@
-export { DappLookerChartsAPI } from './src/chart/DappLookerCharts';
+export { DLAnalytics } from './src/DappLookerCharts';
