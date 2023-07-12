@@ -1,1 +1,1 @@
-export {PushAPIModule} from './push';
+export {PushAPIModule} from './implementation/push';
