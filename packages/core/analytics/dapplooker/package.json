@@ -1,0 +1,41 @@
+{
+    "name": "dapplooker-sdk",
+    "version": "0.0.1",
+    "description": "SDK for retrieving DappLooker chart data",
+    "author": "DappLooker",
+    "license": "MIT",
+    "main": "dist/analytics/dapplooker/index.js",
+    "types": "dist/analytics/dapplooker/index.d.ts",
+    "scripts": {
+        "test": "export $(xargs < ./tests/config/.env.test) && jest",
+        "build": "tsc",
+        "prepare": "npm run build"
+    },
+    "keywords": [
+        "dapplooker",
+        "dapplooker sdk",
+        "web3 analytics",
+        "blockchain analytics"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/merokudao/dApp-sdk.git"
+    },
+    "homepage": "https://github.com/merokudao/dApp-sdk.git#readme",
+    "bugs": {
+        "url": "https://github.com/merokudao/dApp-sdk.git/issues"
+    },
+    "files": [
+        "dist/**/*"
+    ],
+    "dependencies": {
+        "@types/jest": "^29.5.3",
+        "dapplooker-sdk": "0.0.6",
+        "jest": "^29.6.1"
+    },
+    "devDependencies": {
+        "@jest/globals": "^29.6.1",
+        "@types/node-fetch": "^2.6.4",
+        "ts-jest": "^29.1.1"
+    }
+}
