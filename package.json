@@ -12,5 +12,11 @@
   },
   "dependencies": {
     "@yarnpkg/plugin-dlx": "^4.0.0-rc.48"
-  }
+  },
+  "workspaces": [
+    "packages/core/messaging/*",
+    "packages/core/analytics/*",
+    "packages/core/finance/*",
+    "packages/core/identity/*"
+  ]
 }
