@@ -1,0 +1,23 @@
+{
+  "name": "dapplooker-visualizer-sdk",
+  "version": "0.0.1",
+  "description": "DappLooker SDK for visualization",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
+  },
+  "keywords": [
+    "web-components",
+    "dapplooker",
+    "dapplooker sdk",
+    "web3 analytics",
+    "blockchain analytics"
+  ],
+  "dependencies": {
+  "dapplooker-visualizer-sdk": "0.0.1"
+},
+  "author": "",
+  "license": "ISC"
+}
