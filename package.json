@@ -1,0 +1,16 @@
+{
+  "name": "@merokudao/dapp-sdk",
+  "version": "1.0.0",
+  "description": "A unified SDK to build web3 apps.",
+  "main": "index.js",
+  "repository": "https://github.com/merokudao/dapp-sdk",
+  "author": "r48b1t <arc09@pm.me>",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "turbo": "^1.10.7"
+  },
+  "dependencies": {
+    "@yarnpkg/plugin-dlx": "^4.0.0-rc.48"
+  }
+}
