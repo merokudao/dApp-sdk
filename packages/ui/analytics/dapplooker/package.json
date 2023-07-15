@@ -1,5 +1,5 @@
 {
-  "name": "dapplooker-visualizer-sdk",
+  "name": "dapplooker-ui",
   "version": "0.0.1",
   "description": "DappLooker SDK for visualization",
   "main": "dist/index.js",
@@ -16,8 +16,8 @@
     "blockchain analytics"
   ],
   "dependencies": {
-  "dapplooker-visualizer-sdk": "0.0.1"
-},
+    "dapplooker-visualizer-sdk": "0.0.1"
+  },
   "author": "",
   "license": "ISC"
 }
