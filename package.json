@@ -12,5 +12,12 @@
   },
   "dependencies": {
     "@yarnpkg/plugin-dlx": "^4.0.0-rc.48"
+  },
+  "workspaces": [
+    "packages/**/*"
+  ],
+  "resolutions": {
+    "@types/react": "18.2.14",
+    "@types/react-dom": "18.2.6"
   }
 }

@@ -1,5 +1,5 @@
 {
-  "name": "dapplooker-visualizer-sdk",
+  "name": "dapplooker-ui-sdk",
   "version": "0.0.1",
   "description": "DappLooker SDK for visualization",
   "main": "dist/index.js",
