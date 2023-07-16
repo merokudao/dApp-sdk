@@ -23,8 +23,17 @@ jobs:
     - name: Checkout Code
       uses: actions/checkout@v3
 
-    - name: Set yarn to berry
-      run: yarn set version berry
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v2
+      with:
+        node-version: ${{ matrix.node-version }}
+
+    # Use specific Yarn version
+    - name: Set Yarn version
+      run: |
+        curl -o .yarn/releases/yarn-3.6.1.cjs -L https://github.com/yarnpkg/berry/raw/master/packages/yarnpkg-cli/bin/yarn.js
+        chmod +x .yarn/releases/yarn-3.6.1.cjs
+        echo ".yarn/releases" >> $GITHUB_PATH
 
     - name: Get yarn cache directory path
       id: yarn-cache-dir-path
