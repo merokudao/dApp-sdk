@@ -1,5 +1,5 @@
 {
-    "name": "dapplooker-sdk",
+    "name": "@merokudao/dapp-sdk-analytics-dapplooker",
     "version": "0.0.1",
     "description": "SDK for retrieving DappLooker chart data",
     "author": "DappLooker",

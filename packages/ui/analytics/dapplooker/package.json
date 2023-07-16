@@ -16,8 +16,8 @@
     "blockchain analytics"
   ],
   "dependencies": {
-  "dapplooker-visualizer-sdk": "0.0.1"
-},
+    "dapplooker-visualizer-sdk": "0.0.1"
+  },
   "author": "",
   "license": "ISC"
 }

@@ -1,0 +1,55 @@
+# This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
+# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-nodejs
+
+name: Build and Test
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    environment: preview
+    strategy:
+      matrix:
+        node-version: [ 19.2.0]
+        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v3
+
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v2
+      with:
+        node-version: ${{ matrix.node-version }}
+
+    # Use specific Yarn version
+    - name: Set Yarn version
+      run: |
+        mkdir -p .yarn/releases
+        curl -o .yarn/releases/yarn-3.6.1.cjs -L https://github.com/yarnpkg/berry/raw/master/packages/yarnpkg-cli/bin/yarn.js
+        chmod +x .yarn/releases/yarn-3.6.1.cjs
+        echo ".yarn/releases" >> $GITHUB_PATH
+
+    - name: Get yarn cache directory path
+      id: yarn-cache-dir-path
+      run: echo "dir=$(yarn config get cacheFolder)" >> $GITHUB_OUTPUT
+
+    - uses: actions/cache@v3
+      id: yarn-cache # use this to check for `cache-hit` (`steps.yarn-cache.outputs.cache-hit != 'true'`)
+      with:
+        path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
+        key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+        restore-keys: |
+          ${{ runner.os }}-yarn-
+
+    - name: Install Dependencies
+      run: yarn install --immutable
+
+    - name: Build Packages
+      run: yarn build
