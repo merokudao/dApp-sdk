@@ -5,9 +5,9 @@ name: Build and Test
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "test-fix" ]
   pull_request:
-    branches: [ "main" ]
+    branches: [ "test-fix" ]
 
 jobs:
   build:
@@ -53,3 +53,6 @@ jobs:
 
     - name: Build Packages
       run: yarn build
+
+    - name: Run Tests
+      run: yarn test

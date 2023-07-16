@@ -25,6 +25,8 @@
     "build": "turbo run build",
     "clean:node_modules": "find . -name 'node_modules' -type d -prune -exec rm -rf '{}' +",
     "clean:dist": "find . -name 'dist' -type d -prune -exec rm -rf '{}' +",
-    "clean": "yarn clean:node_modules; yarn clean:dist"
+    "clean": "yarn clean:node_modules; yarn clean:dist",
+    "test": "turbo run test",
+    "test:lint": "turbo run lint"
   }
 }
