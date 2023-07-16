@@ -1,4 +1,6 @@
-# dApp SDK
+# @merokudao/dApp-SDK
+
+_The only way to build great web3 experiences_
 
 Welcome to the dApp SDK, your one-stop solution for creating decentralized applications
 (dApps) with ease. The SDK provides a set of powerful, modular components that cover
@@ -9,6 +11,8 @@ deploying dApps on various blockchain platforms.
 
 This SDK can be used to build dApps and publish / distribute them on the dApp Stores
 powered by dApp Store Kit.
+
+[Eth CC Presentation](https://docs.google.com/presentation/d/e/2PACX-1vSH53yRLzN0w_DZjlPw-EstBf2uo0cma-D6X6HechwD02wMZwkhBW-ex69StaaGbR3jYJnbQXFhItM4/pub?start=true&loop=false&delayms=5000)
 
 ## Features
 
