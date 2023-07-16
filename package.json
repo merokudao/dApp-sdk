@@ -19,5 +19,12 @@
   "resolutions": {
     "@types/react": "18.2.14",
     "@types/react-dom": "18.2.6"
+  },
+  "packageManager": "yarn@3.6.1",
+  "scripts": {
+    "build": "turbo run build",
+    "clean:node_modules": "find . -name 'node_modules' -type d -prune -exec rm -rf '{}' +",
+    "clean:dist": "find . -name 'dist' -type d -prune -exec rm -rf '{}' +",
+    "clean": "yarn clean:node_modules; yarn clean:dist"
   }
 }

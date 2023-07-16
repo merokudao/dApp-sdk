@@ -15,7 +15,7 @@ export class Index {
     }
   }
 
-  async buyCrypto(symbol: string, network: string) {
+  async buyCryo to(symbol: string, network: string) {
     await this.provider.buyCrypto(symbol, network);
   }
 

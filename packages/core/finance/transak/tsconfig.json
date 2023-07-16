@@ -1,0 +1,5 @@
+{
+  "extends": "@merokudao/tsconfig/corelib.json",
+  "include": ["."],
+  "exclude": ["dist", "build", "node_modules"]
+}
