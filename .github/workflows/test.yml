@@ -16,20 +16,28 @@ jobs:
     environment: preview
     strategy:
       matrix:
-        node-version: [ 18.12.0]
+        node-version: [ 19.2.0]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
     - name: Checkout Code
       uses: actions/checkout@v3
+
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'yarn'
 
+    - name: Set yarn to berry
+      run: yarn set version berry
+
     - name: Install Dependencies
       run: yarn
+
+    - name: Get yarn cache directory path
+      id: yarn-cache-dir-path
+      run: echo "dir=$(yarn config get cacheFolder)" >> $GITHUB_OUTPUT
 
     - name: Build Packages
       run: yarn build
