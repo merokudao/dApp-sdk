@@ -15,7 +15,9 @@
         "dapplooker",
         "dapplooker sdk",
         "web3 analytics",
-        "blockchain analytics"
+        "blockchain analytics",
+        "meroku",
+        "dapp-sdk"
     ],
     "repository": {
         "type": "git",
@@ -38,5 +40,8 @@
         "@jest/globals": "^29.6.1",
         "@types/node-fetch": "^2.6.4",
         "ts-jest": "^29.1.1"
+    },
+    "publishConfig": {
+      "access": "public"
     }
 }

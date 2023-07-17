@@ -70,15 +70,22 @@ Coming Soon
 
 ## Contributing Guideline
 
-Coming Soon
+[Contributing Guidelines](./CONTRIBUTING.md)
 
 ## Setup
 
-This repo used Yarn v2 for package management. To install Yarn v2, follow the migration
-instructions at [https://yarnpkg.com/getting-started/migration](https://yarnpkg.com/getting-started/migration).
+This repo used Yarn v2 for package management.
+To install Yarn v2, Do the following
 
 ```bash
+# Make sure yarn latest is installed globally
 npm install -g yarn
+
+# Update the yarn to use latest version
+yarn set version latest
+
+# Optionally can install workspace plugin
+yarn plugin import workspace-tools
 ```
 
 To install the dependencies, run the following command:
@@ -95,4 +102,5 @@ yarn build
 
 ## Examples
 
-Coming Soon
+The examples for `@dapp-sdk` package suites is available at [https://github.com/merokudao/dApp-sdk-examples](https://github.com/merokudao/dApp-sdk-examples).
+

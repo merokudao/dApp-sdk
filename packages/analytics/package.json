@@ -1,11 +1,27 @@
 {
   "name": "@dapp-sdk/analytics",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist/analytics/index.ts",
   "dependencies": {
     "@dapp-sdk/analytics-dapplooker": "1.0.0"
   },
   "scripts": {
     "build": "tsc"
-  }
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "tags": [
+    "meroku",
+    "dapp-sdk"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/merokudao/dApp-sdk.git"
+  },
+  "homepage": "https://github.com/merokudao/dApp-sdk.git#readme",
+  "bugs": {
+      "url": "https://github.com/merokudao/dApp-sdk.git/issues"
+  },
+  "license": "MIT"
 }
