@@ -1,7 +1,7 @@
 {
   "name": "@dapp-sdk/finance-ui-transak",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/transak.js",
   "dependencies": {
     "@dapp-sdk/finance-ui-interface": "1.0.0"
   },

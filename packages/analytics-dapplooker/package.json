@@ -4,8 +4,8 @@
     "description": "SDK for retrieving DappLooker chart data",
     "author": "DappLooker",
     "license": "MIT",
-    "main": "dist/analytics/dapplooker/src/index.js",
-    "types": "dist/analytics/dapplooker/src/index.d.ts",
+    "main": "dist/analytics-dapplooker/src/index.js",
+    "types": "dist/analytics-dapplooker/src/index.d.ts",
     "scripts": {
         "test": "export $(xargs < ./tests/config/.env.test) && jest",
         "build": "tsc",

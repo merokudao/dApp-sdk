@@ -1,7 +1,7 @@
 {
   "name": "@dapp-sdk/finance-ui-interface",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "build": "tsc"
   }

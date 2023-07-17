@@ -1,3 +1,3 @@
-// import { Transak } from "@dapp-sdk/finance-ui-transak";
+import { Transak } from "@dapp-sdk/finance-ui-transak";
 
-// export default Transak;
+export default Transak;

@@ -1,8 +1,10 @@
 {
-  "extends": "@merokudao/tsconfig/react-library.json",
   "include": ["."],
-  "exclude": ["dist", "build", "node_modules"],
+  "exclude": ["build", "node_modules"],
   "compilerOptions": {
     "outDir": "dist",
-  }
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "jsx": "react"
+  },
 }

@@ -1,7 +1,8 @@
 {
   "name": "@dapp-sdk/finance-transak",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/finance-transak/src/index.js",
+  "types": "dist/finance-transak/src/index.d.ts",
   "license": "MIT",
   "dependencies": {
     "@dapp-sdk/finance-interface": "1.0.0",
