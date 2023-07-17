@@ -11,3 +11,6 @@ packages/**/*/dist
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions*.tgz
+*.tgz
+.npmignore
+.vscode
