@@ -31,9 +31,7 @@ jobs:
     # Use specific Yarn version
     - name: Set Yarn version
       run: |
-        mkdir -p .yarn/releases
-        curl -o .yarn/releases/yarn-3.6.1.cjs -L https://github.com/yarnpkg/berry/raw/master/packages/yarnpkg-cli/bin/yarn.js
-        chmod +x .yarn/releases/yarn-3.6.1.cjs
+        yarn set version stable
         echo ".yarn/releases" >> $GITHUB_PATH
 
     - name: Get yarn cache directory path
