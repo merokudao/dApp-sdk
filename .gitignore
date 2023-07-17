@@ -10,4 +10,7 @@ packages/**/*/dist
 !.yarn/plugins
 !.yarn/releases
 !.yarn/sdks
-!.yarn/versions
+!.yarn/versions*.tgz
+*.tgz
+.npmignore
+.vscode

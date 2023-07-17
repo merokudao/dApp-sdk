@@ -1,12 +1,10 @@
 {
-  "name": "@merokudao/dapp-sdk",
+  "name": "dapp-sdk",
   "version": "1.0.0",
-  "description": "A unified SDK to build web3 apps.",
-  "main": "index.js",
+  "description": "The only way to build great web3 experiences.",
   "repository": "https://github.com/merokudao/dapp-sdk",
   "author": "r48b1t <arc09@pm.me>",
   "license": "MIT",
-  "private": true,
   "devDependencies": {
     "turbo": "^1.10.7"
   },
@@ -14,7 +12,7 @@
     "@yarnpkg/plugin-dlx": "^4.0.0-rc.48"
   },
   "workspaces": [
-    "packages/**/*"
+    "packages/*"
   ],
   "resolutions": {
     "@types/react": "18.2.14",
@@ -25,6 +23,7 @@
     "build": "turbo run build",
     "clean:node_modules": "find . -name 'node_modules' -type d -prune -exec rm -rf '{}' +",
     "clean:dist": "find . -name 'dist' -type d -prune -exec rm -rf '{}' +",
-    "clean": "yarn clean:node_modules; yarn clean:dist"
+    "clean": "yarn clean:node_modules; yarn clean:dist",
+    "genTree": "find packages -not -name '.turbo' -not -name '.DS_Store' -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
   }
 }

@@ -64,10 +64,35 @@ The dApp SDK offers the following key components:
 
 # Usage
 
-The dApp SDK is designed to be used across a variety of platforms like - web (browser), NodeJS, iOS and
-Android. The specific of usage for each component is available in the respective docs.
-More specific docs around usage and implementation is available in the [docs](/docs) directory.
+Coming Soon
+
+# Development
+
+## Contributing Guideline
+
+Coming Soon
+
+## Setup
+
+This repo used Yarn v2 for package management. To install Yarn v2, follow the migration
+instructions at [https://yarnpkg.com/getting-started/migration](https://yarnpkg.com/getting-started/migration).
+
+```bash
+npm install -g yarn
+```
+
+To install the dependencies, run the following command:
+
+```bash
+yarn install
+```
+
+To build the project, run the following command:
+
+```bash
+yarn build
+```
 
 ## Examples
 
-There are examples of usage of each module for various use cases present in the [examples](/examples) directory.
+Coming Soon

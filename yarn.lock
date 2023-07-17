@@ -434,6 +434,145 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@dapp-sdk/analytics-dapplooker@1.0.0, @dapp-sdk/analytics-dapplooker@workspace:packages/analytics-dapplooker":
+  version: 0.0.0-use.local
+  resolution: "@dapp-sdk/analytics-dapplooker@workspace:packages/analytics-dapplooker"
+  dependencies:
+    "@dapp-sdk/analytics-interface": "workspace:^"
+    "@jest/globals": ^29.6.1
+    "@types/jest": ^29.5.3
+    "@types/node-fetch": ^2.6.4
+    dapplooker-sdk: 0.0.6
+    jest: ^29.6.1
+    ts-jest: ^29.1.1
+  languageName: unknown
+  linkType: soft
+
+"@dapp-sdk/analytics-interface@workspace:^, @dapp-sdk/analytics-interface@workspace:packages/analytics-interface":
+  version: 0.0.0-use.local
+  resolution: "@dapp-sdk/analytics-interface@workspace:packages/analytics-interface"
+  languageName: unknown
+  linkType: soft
+
+"@dapp-sdk/analytics-ui-dapplooker@1.0.0, @dapp-sdk/analytics-ui-dapplooker@workspace:packages/analytics-ui-dapplooker":
+  version: 0.0.0-use.local
+  resolution: "@dapp-sdk/analytics-ui-dapplooker@workspace:packages/analytics-ui-dapplooker"
+  dependencies:
+    dapplooker-visualizer-sdk: 0.0.1
+  languageName: unknown
+  linkType: soft
+
+"@dapp-sdk/analytics-ui-interface@workspace:packages/analytics-ui-interface":
+  version: 0.0.0-use.local
+  resolution: "@dapp-sdk/analytics-ui-interface@workspace:packages/analytics-ui-interface"
+  languageName: unknown
+  linkType: soft
+
+"@dapp-sdk/analytics-ui@workspace:packages/analytics-ui":
+  version: 0.0.0-use.local
+  resolution: "@dapp-sdk/analytics-ui@workspace:packages/analytics-ui"
+  dependencies:
+    "@dapp-sdk/analytics-ui-dapplooker": 1.0.0
+  languageName: unknown
+  linkType: soft
+
+"@dapp-sdk/analytics@workspace:packages/analytics":
+  version: 0.0.0-use.local
+  resolution: "@dapp-sdk/analytics@workspace:packages/analytics"
+  dependencies:
+    "@dapp-sdk/analytics-dapplooker": 1.0.0
+  languageName: unknown
+  linkType: soft
+
+"@dapp-sdk/finance-interface@1.0.0, @dapp-sdk/finance-interface@workspace:packages/finance-interface":
+  version: 0.0.0-use.local
+  resolution: "@dapp-sdk/finance-interface@workspace:packages/finance-interface"
+  languageName: unknown
+  linkType: soft
+
+"@dapp-sdk/finance-transak@1.0.0, @dapp-sdk/finance-transak@workspace:packages/finance-transak":
+  version: 0.0.0-use.local
+  resolution: "@dapp-sdk/finance-transak@workspace:packages/finance-transak"
+  dependencies:
+    "@dapp-sdk/finance-interface": 1.0.0
+    "@transak/transak-sdk": ^1.3.0
+  languageName: unknown
+  linkType: soft
+
+"@dapp-sdk/finance-ui-interface@1.0.0, @dapp-sdk/finance-ui-interface@workspace:packages/finance-ui-interface":
+  version: 0.0.0-use.local
+  resolution: "@dapp-sdk/finance-ui-interface@workspace:packages/finance-ui-interface"
+  languageName: unknown
+  linkType: soft
+
+"@dapp-sdk/finance-ui-transak@1.0.0, @dapp-sdk/finance-ui-transak@workspace:packages/finance-ui-transak":
+  version: 0.0.0-use.local
+  resolution: "@dapp-sdk/finance-ui-transak@workspace:packages/finance-ui-transak"
+  dependencies:
+    "@dapp-sdk/finance-ui-interface": 1.0.0
+  languageName: unknown
+  linkType: soft
+
+"@dapp-sdk/finance-ui@workspace:packages/finance-ui":
+  version: 0.0.0-use.local
+  resolution: "@dapp-sdk/finance-ui@workspace:packages/finance-ui"
+  dependencies:
+    "@dapp-sdk/finance-ui-transak": 1.0.0
+  languageName: unknown
+  linkType: soft
+
+"@dapp-sdk/finance@workspace:packages/finance":
+  version: 0.0.0-use.local
+  resolution: "@dapp-sdk/finance@workspace:packages/finance"
+  dependencies:
+    "@dapp-sdk/finance-transak": 1.0.0
+  languageName: unknown
+  linkType: soft
+
+"@dapp-sdk/messaging-interface@1.0.0, @dapp-sdk/messaging-interface@workspace:packages/messaging-interface":
+  version: 0.0.0-use.local
+  resolution: "@dapp-sdk/messaging-interface@workspace:packages/messaging-interface"
+  languageName: unknown
+  linkType: soft
+
+"@dapp-sdk/messaging-push@workspace:packages/messaging-push":
+  version: 0.0.0-use.local
+  resolution: "@dapp-sdk/messaging-push@workspace:packages/messaging-push"
+  dependencies:
+    "@dapp-sdk/messaging-interface": 1.0.0
+  languageName: unknown
+  linkType: soft
+
+"@dapp-sdk/messaging-ui-interface@1.0.0, @dapp-sdk/messaging-ui-interface@workspace:packages/messaging-ui-interface":
+  version: 0.0.0-use.local
+  resolution: "@dapp-sdk/messaging-ui-interface@workspace:packages/messaging-ui-interface"
+  languageName: unknown
+  linkType: soft
+
+"@dapp-sdk/messaging-ui-push@1.0.0, @dapp-sdk/messaging-ui-push@workspace:packages/messaging-ui-push":
+  version: 0.0.0-use.local
+  resolution: "@dapp-sdk/messaging-ui-push@workspace:packages/messaging-ui-push"
+  dependencies:
+    "@dapp-sdk/messaging-ui-interface": 1.0.0
+  languageName: unknown
+  linkType: soft
+
+"@dapp-sdk/messaging-ui@workspace:packages/messaging-ui":
+  version: 0.0.0-use.local
+  resolution: "@dapp-sdk/messaging-ui@workspace:packages/messaging-ui"
+  dependencies:
+    "@dapp-sdk/messaging-ui-push": 1.0.0
+  languageName: unknown
+  linkType: soft
+
+"@dapp-sdk/messaging@workspace:packages/messaging":
+  version: 0.0.0-use.local
+  resolution: "@dapp-sdk/messaging@workspace:packages/messaging"
+  dependencies:
+    "@dapp-sdk/messaging-ui-push": 1.0.0
+  languageName: unknown
+  linkType: soft
+
 "@eslint/eslintrc@npm:^0.4.3":
   version: 0.4.3
   resolution: "@eslint/eslintrc@npm:0.4.3"
@@ -804,36 +943,6 @@ __metadata:
   checksum: 011a3ef0933fda86ec726d29ebc14e829e2f1ba23eca8ed8ed4d5c6f2a102c55cc6986000c5f4c8c3d0c549bc671f5d84d00ce91adc5bbd95970eec3662c0a92
   languageName: node
   linkType: hard
-
-"@merokudao/dapp-sdk-analytics-dapplooker@workspace:packages/core/analytics/dapplooker":
-  version: 0.0.0-use.local
-  resolution: "@merokudao/dapp-sdk-analytics-dapplooker@workspace:packages/core/analytics/dapplooker"
-  dependencies:
-    "@jest/globals": ^29.6.1
-    "@types/jest": ^29.5.3
-    "@types/node-fetch": ^2.6.4
-    dapplooker-sdk: 0.0.6
-    jest: ^29.6.1
-    ts-jest: ^29.1.1
-  languageName: unknown
-  linkType: soft
-
-"@merokudao/dapp-sdk-finance-transak@workspace:packages/core/finance/transak":
-  version: 0.0.0-use.local
-  resolution: "@merokudao/dapp-sdk-finance-transak@workspace:packages/core/finance/transak"
-  dependencies:
-    "@transak/transak-sdk": ^1.3.0
-  languageName: unknown
-  linkType: soft
-
-"@merokudao/dapp-sdk@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "@merokudao/dapp-sdk@workspace:."
-  dependencies:
-    "@yarnpkg/plugin-dlx": ^4.0.0-rc.48
-    turbo: ^1.10.7
-  languageName: unknown
-  linkType: soft
 
 "@merokudao/tsconfig@workspace:packages/tsconfig":
   version: 0.0.0-use.local
@@ -1961,6 +2070,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"dapp-sdk@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "dapp-sdk@workspace:."
+  dependencies:
+    "@yarnpkg/plugin-dlx": ^4.0.0-rc.48
+    turbo: ^1.10.7
+  languageName: unknown
+  linkType: soft
+
 "dapplooker-sdk@npm:0.0.6":
   version: 0.0.6
   resolution: "dapplooker-sdk@npm:0.0.6"
@@ -1971,14 +2089,6 @@ __metadata:
   checksum: d43730f519debccbcde6d9b4409ba9111b249cabcaf6ad68db506182e440f9be38127c4a9296f7b9c63793eb7a70114985d185460bcd216db76908bb0b1bf654
   languageName: node
   linkType: hard
-
-"dapplooker-ui-sdk@workspace:packages/ui/analytics/dapplooker":
-  version: 0.0.0-use.local
-  resolution: "dapplooker-ui-sdk@workspace:packages/ui/analytics/dapplooker"
-  dependencies:
-    dapplooker-visualizer-sdk: 0.0.1
-  languageName: unknown
-  linkType: soft
 
 "dapplooker-visualizer-sdk@npm:0.0.1":
   version: 0.0.1

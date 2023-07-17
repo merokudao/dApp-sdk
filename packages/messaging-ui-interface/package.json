@@ -1,0 +1,8 @@
+{
+  "name": "@dapp-sdk/messaging-ui-interface",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc"
+  }
+}

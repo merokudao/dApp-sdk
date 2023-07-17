@@ -1,0 +1,10 @@
+{
+  "include": ["."],
+  "exclude": ["build", "node_modules"],
+  "compilerOptions": {
+    "outDir": "dist",
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "jsx": "react"
+  },
+}

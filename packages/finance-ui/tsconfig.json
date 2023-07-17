@@ -1,0 +1,8 @@
+{
+  "include": ["."],
+  "exclude": ["build", "node_modules"],
+  "compilerOptions": {
+    "outDir": "dist",
+    "jsx": "react"
+  }
+}
