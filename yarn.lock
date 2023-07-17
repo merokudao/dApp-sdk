@@ -438,7 +438,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@dapp-sdk/analytics-dapplooker@workspace:packages/analytics-dapplooker"
   dependencies:
-    "@dapp-sdk/analytics-interface": 1.0.0
+    "@dapp-sdk/analytics-interface": "workspace:^"
     "@jest/globals": ^29.6.1
     "@types/jest": ^29.5.3
     "@types/node-fetch": ^2.6.4
@@ -448,7 +448,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@dapp-sdk/analytics-interface@1.0.0, @dapp-sdk/analytics-interface@workspace:packages/analytics-interface":
+"@dapp-sdk/analytics-interface@workspace:^, @dapp-sdk/analytics-interface@workspace:packages/analytics-interface":
   version: 0.0.0-use.local
   resolution: "@dapp-sdk/analytics-interface@workspace:packages/analytics-interface"
   languageName: unknown
@@ -462,7 +462,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@dapp-sdk/analytics-ui-interface@1.0.0, @dapp-sdk/analytics-ui-interface@workspace:packages/analytics-ui-interface":
+"@dapp-sdk/analytics-ui-interface@workspace:packages/analytics-ui-interface":
   version: 0.0.0-use.local
   resolution: "@dapp-sdk/analytics-ui-interface@workspace:packages/analytics-ui-interface"
   languageName: unknown
@@ -473,7 +473,6 @@ __metadata:
   resolution: "@dapp-sdk/analytics-ui@workspace:packages/analytics-ui"
   dependencies:
     "@dapp-sdk/analytics-ui-dapplooker": 1.0.0
-    "@dapp-sdk/analytics-ui-interface": 1.0.0
   languageName: unknown
   linkType: soft
 
@@ -518,7 +517,6 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@dapp-sdk/finance-ui@workspace:packages/finance-ui"
   dependencies:
-    "@dapp-sdk/finance-ui-interface": 1.0.0
     "@dapp-sdk/finance-ui-transak": 1.0.0
   languageName: unknown
   linkType: soft
@@ -572,15 +570,6 @@ __metadata:
   resolution: "@dapp-sdk/messaging@workspace:packages/messaging"
   dependencies:
     "@dapp-sdk/messaging-ui-push": 1.0.0
-  languageName: unknown
-  linkType: soft
-
-"@dapp-sdk@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "@dapp-sdk@workspace:."
-  dependencies:
-    "@yarnpkg/plugin-dlx": ^4.0.0-rc.48
-    turbo: ^1.10.7
   languageName: unknown
   linkType: soft
 
@@ -2080,6 +2069,15 @@ __metadata:
   checksum: d240b7757544460ae0586a341a53110ab0a61126570ef2d8c731e3eab3f0cb6e488e2609e6a69b46727635de49be20b071688698744417ff1b6c1d7ccd03e0de
   languageName: node
   linkType: hard
+
+"dapp-sdk@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "dapp-sdk@workspace:."
+  dependencies:
+    "@yarnpkg/plugin-dlx": ^4.0.0-rc.48
+    turbo: ^1.10.7
+  languageName: unknown
+  linkType: soft
 
 "dapplooker-sdk@npm:0.0.6":
   version: 0.0.6
