@@ -4,5 +4,8 @@
   "exclude": ["dist", "build", "node_modules"],
   "compilerOptions": {
     "outDir": "dist",
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
