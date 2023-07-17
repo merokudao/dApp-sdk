@@ -1,0 +1,20 @@
+#!/bin/bash
+
+PACKAGES_TO_PUBLISH=("analytics" "analytics-dapplooker" "finance" "finance-transak")
+
+for PACKAGE in "${PACKAGES_TO_PUBLISH[@]}"
+do
+    echo "Checking ${PACKAGE}"
+    cd packages/${PACKAGE}
+    PACKAGE_NAME=$(node -p "require('./package.json').name")
+    PACKAGE_VERSION=$(node -p "require('./package.json').version")
+
+    # Check if the package version is already published
+    if npm show ${PACKAGE_NAME}@${PACKAGE_VERSION} version > /dev/null 2>&1; then
+        echo "${PACKAGE_NAME}@${PACKAGE_VERSION} is already published. Skipping."
+    else
+        echo "${PACKAGE_NAME}@${PACKAGE_VERSION} is not yet published. Publishing now."
+        npm publish
+    fi
+    cd ../..
+done

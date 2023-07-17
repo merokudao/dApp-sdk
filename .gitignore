@@ -14,3 +14,4 @@ packages/**/*/dist
 *.tgz
 .npmignore
 .vscode
+.yarnrc.yml
