@@ -1,0 +1,11 @@
+{
+  "name": "@dapp-sdk/analytics",
+  "version": "1.0.0",
+  "main": "dist/analytics/index.ts",
+  "dependencies": {
+    "@dapp-sdk/analytics-dapplooker": "1.0.0"
+  },
+  "scripts": {
+    "build": "tsc"
+  }
+}

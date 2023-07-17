@@ -1,0 +1,8 @@
+{
+  "extends": "@merokudao/tsconfig/react-library.json",
+  "include": ["./src/**/*.ts", "./src/**/*.tsx"],
+  "exclude": ["dist", "build", "node_modules"],
+  "compilerOptions": {
+    "outDir": "dist",
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "@dapp-sdk/messaging",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "@dapp-sdk/messaging-ui-push": "1.0.0"
+  },
+  "scripts": {
+    "build": "tsc"
+  }
+}

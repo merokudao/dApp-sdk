@@ -1,0 +1,12 @@
+{
+  "name": "@dapp-sdk/finance-ui",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "@dapp-sdk/finance-ui-interface": "1.0.0",
+    "@dapp-sdk/finance-ui-transak": "1.0.0"
+  },
+  "scripts": {
+    "build": "tsc"
+  }
+}
