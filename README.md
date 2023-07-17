@@ -70,7 +70,7 @@ Coming Soon
 
 ## Contributing Guideline
 
-Coming Soon
+[Contributing Guidelines](./CONTRIBUTING.md)
 
 ## Setup
 
@@ -102,4 +102,5 @@ yarn build
 
 ## Examples
 
-Coming Soon
+The examples for `@dapp-sdk` package suites is available at [https://github.com/merokudao/dApp-sdk-examples](https://github.com/merokudao/dApp-sdk-examples).
+

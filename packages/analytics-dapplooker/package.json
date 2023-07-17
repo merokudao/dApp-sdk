@@ -15,7 +15,9 @@
         "dapplooker",
         "dapplooker sdk",
         "web3 analytics",
-        "blockchain analytics"
+        "blockchain analytics",
+        "meroku",
+        "dapp-sdk"
     ],
     "repository": {
         "type": "git",
