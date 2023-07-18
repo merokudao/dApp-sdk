@@ -4,7 +4,7 @@
   "version": "1.0.1",
   "main": "index.js",
   "dependencies": {
-    "@dapp-sdk/messaging-push": "1.0.0"
+    "@dapp-sdk/messaging-push": "*"
   },
   "keywords": [
     "dapp-sdk",
