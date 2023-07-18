@@ -1,14 +1,15 @@
 {
   "name": "@dapp-sdk/analytics",
-  "description": "Analytics Module for dApp SDK. Use this to implement default analytics features.",
-  "version": "1.0.2",
+  "description": "Analytics Module for dApp SDK. With default implementation.",
+  "version": "1.0.3",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "dependencies": {
     "@dapp-sdk/analytics-dapplooker": "1.0.1"
   },
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "prepack": "yarn build"
   },
   "publishConfig": {
     "access": "public"

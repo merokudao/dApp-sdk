@@ -1,7 +1,7 @@
 {
   "name": "@dapp-sdk/analytics-ui-dapplooker",
   "version": "1.0.0",
-  "description": "DappLooker SDK for visualization",
+  "description": "DappLooker implementation for analytics UI",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
@@ -13,14 +13,24 @@
     "dapplooker",
     "dapplooker sdk",
     "web3 analytics",
-    "blockchain analytics"
+    "blockchain analytics",
+    "meroku",
+    "dapp-sdk"
   ],
   "dependencies": {
     "dapplooker-visualizer-sdk": "0.0.1"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "DappLooker Team",
+  "license": "MIT",
   "publishConfig": {
     "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/merokudao/dApp-sdk.git"
+  },
+  "homepage": "https://github.com/merokudao/dApp-sdk.git#readme",
+  "bugs": {
+    "url": "https://github.com/merokudao/dApp-sdk.git/issues"
   }
 }

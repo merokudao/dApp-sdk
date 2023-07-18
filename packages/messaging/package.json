@@ -1,14 +1,30 @@
 {
   "name": "@dapp-sdk/messaging",
+  "description": "dapp sdk Messaging with default implementation.",
   "version": "1.0.0",
   "main": "index.js",
   "dependencies": {
     "@dapp-sdk/messaging-ui-push": "1.0.0"
   },
+  "keywords": [
+    "dapp-sdk",
+    "messaging"
+  ],
   "scripts": {
     "build": "tsc"
   },
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/merokudao/dApp-sdk.git"
+  },
+  "homepage": "https://github.com/merokudao/dApp-sdk.git#readme",
+  "bugs": {
+    "url": "https://github.com/merokudao/dApp-sdk.git/issues"
+  },
+  "files": [
+    "dist/**/*"
+  ]
 }
