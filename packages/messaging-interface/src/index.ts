@@ -1,5 +1,3 @@
-import * as PushAPI from "@pushprotocol/restapi";
-
 abstract class AbstractMessaging{
     abstract createUser(
         userInput: object | any
