@@ -1,43 +1,43 @@
 import * as PushAPI from "@pushprotocol/restapi";
 
-abstract class AbstractPushAPI{
+abstract class AbstractMessaging{
     abstract createUser(
-        userInput: PushAPI.user.CreateUserProps
-      ): Promise<PushAPI.IUser>;
+        userInput: object | any
+      ): void;
     
       abstract getUser(
-        userInput: PushAPI.AccountEnvOptionsType
-      ): Promise<PushAPI.IUser>
+        userInput: object | any
+      ): void
     
       abstract fetchChats(
-        fetchChatInput: PushAPI.chat.ChatsOptionsType
-      ): Promise<PushAPI.IFeeds[]>
+        fetchChatInput: object | any
+      ): void
 
       abstract fetchChatRequest(
-        fetchChatInput: PushAPI.chat.RequestOptionsType
-      ): Promise<PushAPI.IFeeds[]>
+        fetchChatInput: object | any
+      ): void
     
       abstract conversationHash(
-        conversationHashInput: PushAPI.ConversationHashOptionsType
-      ): Promise<any>
+        conversationHashInput: object | any
+      ): void
     
       abstract latestChatBetweenTwoUsers(
-        latestChatInput: PushAPI.chat.LatestMessagesOptionsType
-      ): Promise<PushAPI.IMessageIPFS[]>
+        latestChatInput: object | any
+      ): void
     
       abstract chatHistoryBetweenTwoUsers(
-        chatHistoryInput: PushAPI.chat.HistoricalMessagesOptionsType
-      ): Promise<PushAPI.IMessageIPFS[]> 
+        chatHistoryInput: object | any
+      ): void
     
-      abstract getPgpPrivateKey(decryptPgpInput: any): Promise<any>
+      abstract getPgpPrivateKey(decryptPgpInput: any): void
     
       abstract sendMessages(
-        sendMessageInput: PushAPI.ChatSendOptionsType
-      ): Promise<PushAPI.MessageWithCID>
+        sendMessageInput: object | any
+      ): void
     
       abstract approveRequest(
-        approveRequestInput
-      ): Promise<string>
+        approveRequestInput : object | any
+      ): void
 }
 
-export default AbstractPushAPI;
+export default AbstractMessaging;
