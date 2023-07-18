@@ -5,11 +5,14 @@ import {
   conversationHashResponse,
 } from "./interfaces/pushinterfaces";
 import { BasePushAPI } from "./baseclass/BasePushAPI";
+import { ENV } from "@pushprotocol/restapi/src/lib/constants";
 
 
 export class PushAPIModule extends BasePushAPI {
   
-    constructor(config) {
+    constructor(config:{
+        env?: ENV;
+    }) {
       super(config);
     }
   
