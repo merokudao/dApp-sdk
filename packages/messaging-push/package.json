@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "author": "Push Protocol",
   "description": "Push Protocol Implementation for Messaging in dapp-sdk",
-  "main": "dist/messaging-push/src/index.js",
+  "main": "dist/messaging-push/src/index.ts",
   "types": "dist/messaging-push/src/index.d.ts",
   "license": "MIT",
   "dependencies": {
