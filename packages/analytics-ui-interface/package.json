@@ -17,5 +17,11 @@
   "bugs": {
     "url": "https://github.com/merokudao/dApp-sdk.git/issues"
   },
+  "keywords": [
+    "meroku",
+    "dApp-sdk",
+    "analytics",
+    "ui"
+  ],
   "license": "MIT"
 }
