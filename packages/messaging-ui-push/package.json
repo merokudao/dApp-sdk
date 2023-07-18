@@ -1,11 +1,29 @@
 {
   "name": "@dapp-sdk/messaging-ui-push",
+  "description": "Push Protocol Implementation of dApp SDK UI",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "dependencies": {
     "@dapp-sdk/messaging-ui-interface": "1.0.0"
   },
   "scripts": {
     "build": "tsc"
+  },
+  "keywords": [
+    "dapp-sdk",
+    "messaging-ui",
+    "push"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/merokudao/dApp-sdk.git"
+  },
+  "homepage": "https://github.com/merokudao/dApp-sdk.git#readme",
+  "bugs": {
+    "url": "https://github.com/merokudao/dApp-sdk.git/issues"
   }
 }

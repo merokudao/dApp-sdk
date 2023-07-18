@@ -1,14 +1,28 @@
 {
   "name": "@dapp-sdk/messaging-ui",
+  "description": "dApp-sdk messaging ui kit",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "dependencies": {
     "@dapp-sdk/messaging-ui-push": "1.0.0"
   },
+  "keywords": [
+    "dapp-sdk",
+    "messaging-ui"
+  ],
   "scripts": {
     "build": "tsc"
   },
   "publishConfig": {
     "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/merokudao/dApp-sdk.git"
+  },
+  "homepage": "https://github.com/merokudao/dApp-sdk.git#readme",
+  "bugs": {
+    "url": "https://github.com/merokudao/dApp-sdk.git/issues"
   }
 }
