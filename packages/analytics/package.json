@@ -4,7 +4,7 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "dependencies": {
-    "@dapp-sdk/analytics-dapplooker": "file:/Users/choubey/Documents/CodeBase/dApp-sdk/packages/analytics-dapplooker"
+    "@dapp-sdk/analytics-dapplooker": "1.0.0"
   },
   "scripts": {
     "build": "tsc"
