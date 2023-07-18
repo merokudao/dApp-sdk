@@ -43,13 +43,13 @@ Implement your feature or bugfix, ensuring that you follow the
 following coding standards and best practices.
 
 
-1. Create a new directory under `packages` with the name of implementation packge. This will be a 
-concatenation of "kit name" and the "provider". Ex: If you are a provider for "Messaging" 
-kit, and your org name is "CoolOrg", then the implementation package name 
+1. Create a new directory under `packages` with the name of implementation packge. This will be a
+concatenation of "kit name" and the "provider". Ex: If you are a provider for "Messaging"
+kit, and your org name is "CoolOrg", then the implementation package name
 is `messaging-coolorg`. If you're building for a ui kit, then package name
 will be `messaging-ui-coolorg`.
 
-2. Inside this directory, create the directories `src` to contain all source code 
+2. Inside this directory, create the directories `src` to contain all source code
 and `test` to contain all test cases.
 
 3. Your `package.json` should have following properties in the defined fashion
@@ -79,17 +79,17 @@ An example config is below
 },
 "publishConfig": {"access": "public"},
 "repository": {
-        "type": "git",
-        "url": "git+https://github.com/merokudao/dApp-sdk.git"
-    },
-    "homepage": "https://github.com/merokudao/dApp-sdk.git#readme",
-    "bugs": {
-        "url": "https://github.com/merokudao/dApp-sdk.git/issues"
-    },
-    "files": [
-        "dist/**/*"
-    ],
-}
+  "type": "git",
+  "url": "git+https://github.com/merokudao/dApp-sdk.git"
+},
+"homepage": "https://github.com/merokudao/dApp-sdk.git#readme",
+"bugs": {
+  "url": "https://github.com/merokudao/dApp-sdk.git/issues"
+},
+"files": [
+  "dist/**/*"
+]
+
 ```
 
 4. Your `tsconfig.json` should be able properly build the package. Take a look at the existing [tsconfig.json for ui package](../packages/analytics-ui-dapplooker/tsconfig.json) and [tsconfig.json for package](../packages/analytics-dapplooker/tsconfig.json) for examples.

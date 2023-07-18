@@ -74,6 +74,12 @@ Coming Soon
 
 ## Setup
 
+Copy the .yarnrc.yml.default
+
+```bash
+cp .yarnrc.yml.default .yarnrc.yml
+```
+
 This repo used Yarn v2 for package management.
 To install Yarn v2, Do the following
 

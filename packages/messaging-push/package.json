@@ -2,7 +2,7 @@
   "name": "@dapp-sdk/messaging-push",
   "version": "1.0.0",
   "author": "Push Protocol",
-  "description": "Push Protocol Messaging SDK for dApps",
+  "description": "Push Protocol Implementation for Messaging in dapp-sdk",
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
