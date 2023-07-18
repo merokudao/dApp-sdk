@@ -2,7 +2,7 @@
   "name": "@dapp-sdk/messaging",
   "description": "dapp sdk Messaging with default implementation.",
   "version": "1.0.1",
-  "main": "index.js",
+  "main": "./dist/index.js",
   "dependencies": {
     "@dapp-sdk/messaging-push": "*"
   },
