@@ -529,17 +529,17 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@dapp-sdk/messaging-interface@1.0.0, @dapp-sdk/messaging-interface@workspace:packages/messaging-interface":
+"@dapp-sdk/messaging-interface@*, @dapp-sdk/messaging-interface@workspace:packages/messaging-interface":
   version: 0.0.0-use.local
   resolution: "@dapp-sdk/messaging-interface@workspace:packages/messaging-interface"
   languageName: unknown
   linkType: soft
 
-"@dapp-sdk/messaging-push@workspace:packages/messaging-push":
+"@dapp-sdk/messaging-push@*, @dapp-sdk/messaging-push@workspace:packages/messaging-push":
   version: 0.0.0-use.local
   resolution: "@dapp-sdk/messaging-push@workspace:packages/messaging-push"
   dependencies:
-    "@dapp-sdk/messaging-interface": 1.0.0
+    "@dapp-sdk/messaging-interface": "*"
     "@pushprotocol/restapi": ^1.3.9
     "@types/jest": ^29.5.3
     ethers: 5.7.2
@@ -574,7 +574,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@dapp-sdk/messaging@workspace:packages/messaging"
   dependencies:
-    "@dapp-sdk/messaging-ui-push": 1.0.0
+    "@dapp-sdk/messaging-push": "*"
   languageName: unknown
   linkType: soft
 
