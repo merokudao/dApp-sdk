@@ -1,6 +1,6 @@
 {
   "name": "@dapp-sdk/analytics-interface",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist/analytics-interface/src/index.js",
   "types": "dist/analytics-interface/src/index.d.ts",
   "scripts": {
