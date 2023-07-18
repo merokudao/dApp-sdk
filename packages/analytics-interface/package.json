@@ -5,5 +5,17 @@
   "types": "dist/analytics-interface/src/index.d.ts",
   "scripts": {
     "build": "tsc"
-  }
+  },
+  "publishConfig": {"access": "public"},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/merokudao/dApp-sdk.git"
+  },
+  "homepage": "https://github.com/merokudao/dApp-sdk.git#readme",
+  "bugs": {
+    "url": "https://github.com/merokudao/dApp-sdk.git/issues"
+  },
+  "files": [
+    "dist/**/*"
+  ]
 }

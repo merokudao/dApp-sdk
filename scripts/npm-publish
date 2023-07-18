@@ -1,6 +1,6 @@
 #!/bin/bash
 
-PACKAGES_TO_PUBLISH=("analytics" "analytics-dapplooker" "finance" "finance-transak")
+PACKAGES_TO_PUBLISH=("analytics" "analytics-dapplooker" "analytics-interface" "finance" "finance-transak")
 
 for PACKAGE in "${PACKAGES_TO_PUBLISH[@]}"
 do
