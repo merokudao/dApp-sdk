@@ -6,7 +6,9 @@
   "scripts": {
     "build": "tsc"
   },
-  "publishConfig": {"access": "public"},
+  "publishConfig": {
+    "access": "public"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/merokudao/dApp-sdk.git"

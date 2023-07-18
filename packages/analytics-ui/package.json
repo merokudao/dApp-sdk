@@ -1,7 +1,8 @@
 {
   "name": "@dapp-sdk/analytics-ui",
-  "version": "1.0.0",
-  "main": "index.js",
+  "version": "1.0.1",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "dependencies": {
     "@dapp-sdk/analytics-ui-dapplooker": "1.0.0"
   },
