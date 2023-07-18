@@ -1,8 +1,26 @@
 {
   "name": "@dapp-sdk/messaging-interface",
+  "description": "Messaging Interface for dApp SDK",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
     "build": "tsc"
-  }
+  },
+  "keywords": [
+    "meroku",
+    "dapp-sdk",
+    "messaging"
+  ],
+  "publishConfig": {"access": "public"},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/merokudao/dApp-sdk.git"
+  },
+  "homepage": "https://github.com/merokudao/dApp-sdk.git#readme",
+  "bugs": {
+    "url": "https://github.com/merokudao/dApp-sdk.git/issues"
+  },
+  "files": [
+    "dist/**/*"
+  ]
 }

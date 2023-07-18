@@ -1,6 +1,6 @@
 {
   "name": "@dapp-sdk/analytics",
-  "description": "Analytics Module for dApp SDK. Use this to implement default analytics features.",
+  "description": "Analytics Module for dApp SDK. With default implementation.",
   "version": "1.0.2",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
