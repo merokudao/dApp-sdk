@@ -1,5 +1,5 @@
 # DappLooker Analytics SDK
-The dapp-sdk/analytics-dapplooker provides developers with programmatic access to reliable and comprehensive blockchain data in the Web3 environment. By integrating the DappLooker SDK, you can easily retrieve popular charts data for your decentralized applications (Dapps).
+The @dapp-sdk/analytics-dapplooker provides developers with programmatic access to reliable and comprehensive blockchain data in the Web3 environment. By integrating the DappLooker SDK, you can easily retrieve popular charts data for your decentralized applications (Dapps).
 
 > #### Node version: >=14
 
@@ -84,7 +84,7 @@ In JSON format we will get result with list of objects with key as column name a
 ]*/
 ```
 
-The DappLooker SDK also provides TypeScript support for developers who prefer type-checking and enhanced code editor features.
+The @dapp-sdk/analytics-dapplooker also provides TypeScript support for developers who prefer type-checking and enhanced code editor features.
 
 ```jsx
 //Typescript
