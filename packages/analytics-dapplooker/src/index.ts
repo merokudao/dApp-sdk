@@ -1,1 +1,3 @@
-export { DLAnalytics } from './DappLookerCharts';
+import { DLAnalytics } from './DappLookerCharts';
+
+export default DLAnalytics;
