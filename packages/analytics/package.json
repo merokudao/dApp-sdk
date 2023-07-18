@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/merokudao/dApp-sdk.git#readme",
   "bugs": {
-      "url": "https://github.com/merokudao/dApp-sdk.git/issues"
+    "url": "https://github.com/merokudao/dApp-sdk.git/issues"
   },
   "license": "MIT"
 }

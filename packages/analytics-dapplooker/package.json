@@ -42,6 +42,6 @@
         "ts-jest": "^29.1.1"
     },
     "publishConfig": {
-      "access": "public"
+        "access": "public"
     }
 }
