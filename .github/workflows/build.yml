@@ -1,18 +1,17 @@
 # This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
 # For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-nodejs
 
-name: Build and Test
+name: Build and Publish
 
 on:
   push:
-    branches: [ "main" ]
   pull_request:
-    branches: [ "main" ]
 
 jobs:
   build:
 
     runs-on: ubuntu-latest
+    if: github.event_name == 'pull_request' && github.head_ref == 'main'
     environment: preview
     strategy:
       matrix:
@@ -52,3 +51,48 @@ jobs:
 
     - name: Build Packages
       run: yarn build
+
+  publish-npm:
+    needs: build
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+
+    strategy:
+      matrix:
+        node-version: [ 19.2.0]
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Uses Nodejs ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+          registry-url: https://registry.npmjs.org/
+
+      # Use specific Yarn version
+      - name: Set Yarn version
+        run: |
+          cp .yarnrc.yml.default .yarnrc.yml
+          yarn set version stable
+          echo ".yarn/releases" >> $GITHUB_PATH
+
+      - name: Get yarn cache directory path
+        id: yarn-cache-dir-path
+        run: echo "dir=$(yarn config get cacheFolder)" >> $GITHUB_OUTPUT
+
+      - uses: actions/cache@v3
+        id: yarn-cache # use this to check for `cache-hit` (`steps.yarn-cache.outputs.cache-hit != 'true'`)
+        with:
+          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-yarn-
+
+      - name: Install dependencies
+        run: yarn install --immutable
+
+      - name: Publish npmjs packages
+        run: ./scripts/npm-publish
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
