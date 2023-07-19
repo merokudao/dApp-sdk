@@ -6,12 +6,12 @@ name: Build and Publish
 on:
   push:
   pull_request:
+    branches: [ main ]
 
 jobs:
   build:
 
     runs-on: ubuntu-latest
-    if: github.event_name == 'pull_request' && github.head_ref == 'main'
     environment: preview
     strategy:
       matrix:
