@@ -43,7 +43,7 @@ Implement your feature or bugfix, ensuring that you follow the
 following coding standards and best practices.
 
 
-1. Create a new directory under `packages` with the name of implementation packge. This will be a
+1. Create a new directory under `packages` with the name of implementation package. This will be a
 concatenation of "kit name" and the "provider". Ex: If you are a provider for "Messaging"
 kit, and your org name is "CoolOrg", then the implementation package name
 is `messaging-coolorg`. If you're building for a ui kit, then package name
@@ -61,10 +61,11 @@ and `test` to contain all test cases.
 	5. `types`: `dist/messaging-coolorg/src/index.d.ts`. Update this as per your code.
 	6. `keywords`: A set of keywords describing. We will add keywords `meroku`, `dApp-sdk` to any keywords you already have.
 	7. `"publishConfig": {"access": "public"}` To enable publishing of this package. You should do this only after the feature is ready.
-	8. You need to specify the `"repository"` property with the specifcation described below.
+	8. You need to specify the `"repository"` property with the specification described below.
  	9. At a minimum following scripts are needed
 		1. `build` - To build the project.
 		2. `test` - To test the project
+  10. A `README` file that explains a high level usage and details of the package.
 
 An example config is below
 
@@ -135,13 +136,13 @@ description.
 ### Review Process
 
 1. Github Actions will run and ensure that builds are happening & tests are running
-2. If they fail, it's your responsinility to fix them. Let us know if anything is required to be
+2. If they fail, it's your responsibility to fix them. Let us know if anything is required to be
 done from our side.
 3. A member of the `merokudao` org will review the code, and provide feedback.
 4. If everything is okay, this will be merged with the main branch
 
-### Publishing of module
+## Publishing of module
 
-1. Once a new module is added or an existing module is updated, a member of `merokudao` org
-will publish the package
+1. When your changes land in `main`, a github action workflow will publish them on npmjs.
+There are no manual steps required for this.
 
