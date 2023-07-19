@@ -4,8 +4,8 @@
 name: npm package publish
 
 on:
-  release:
-    types: [created]
+  push:
+    branches: [ "main" ]
 
 jobs:
   build:
@@ -27,7 +27,7 @@ jobs:
         with:
           node-version: 19
           registry-url: https://registry.npmjs.org/
-      
+
       # Use specific Yarn version
       - name: Set Yarn version
         run: |
@@ -46,7 +46,11 @@ jobs:
           key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
           restore-keys: |
             ${{ runner.os }}-yarn-
+
       - run: yarn install --immutable
+
+      - run: yarn build
+
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
