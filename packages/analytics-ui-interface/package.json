@@ -1,8 +1,27 @@
 {
   "name": "@dapp-sdk/analytics-ui-interface",
+  "description": "dApp-sdk analytics ui interface",
   "version": "1.0.0",
   "main": "index.ts",
   "scripts": {
     "build": "tsc"
-  }
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/merokudao/dApp-sdk.git"
+  },
+  "homepage": "https://github.com/merokudao/dApp-sdk.git#readme",
+  "bugs": {
+    "url": "https://github.com/merokudao/dApp-sdk.git/issues"
+  },
+  "keywords": [
+    "meroku",
+    "dApp-sdk",
+    "analytics",
+    "ui"
+  ],
+  "license": "MIT"
 }

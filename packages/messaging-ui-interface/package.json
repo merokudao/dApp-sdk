@@ -1,8 +1,25 @@
 {
   "name": "@dapp-sdk/messaging-ui-interface",
+  "description": "Messaging UI Interface for dApp SDK",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc"
+  },
+  "keywords": [
+    "dapp-sdk",
+    "messaging-ui-interface"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/merokudao/dApp-sdk.git"
+  },
+  "homepage": "https://github.com/merokudao/dApp-sdk.git#readme",
+  "bugs": {
+    "url": "https://github.com/merokudao/dApp-sdk.git/issues"
   }
 }
