@@ -1,0 +1,75 @@
+/* UserChats.css */
+.chat-list {
+  overflow-y: auto;
+  margin: 10px;
+  width: 550px;
+  border-radius: 30px;
+}
+
+.chat-item {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  margin: 10px 0;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: #c9c7c7 0.1s ease;
+}
+.chat-item:last-child {
+  border-bottom: none;
+}
+
+.chat-item:hover {
+  background-color: #e1e1e1;
+}
+
+.profile-picture {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.chat-details {
+  flex: 1;
+  padding: 20px 10px;
+}
+
+.chat-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.chat-name {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.chat-timestamp {
+  font-size: 14px;
+  color: #666;
+}
+
+.chat-message {
+  font-size: 14px;
+  color: #666;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin: 0;
+}
+/* UserChatsDarkMode.css */
+.dark-mode .chat-item {
+  background-color: #212227;
+}
+
+.dark-mode .chat-item:hover {
+  background-color: #212227cb;
+}
+
+.dark-mode .chat-name {
+  color: #e3e0e0;
+}
