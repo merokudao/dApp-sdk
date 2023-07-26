@@ -1,4 +1,4 @@
-import { PushNotificationAPIModule } from "../implementation/push";
+import { PushNotificationAPIModule } from "../src/implementation/push";
 import { ENV } from "@pushprotocol/restapi/src/lib/constants";
 const ethers = require("ethers");
 
