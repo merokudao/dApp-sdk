@@ -17,6 +17,5 @@
     "rootDir": "src",
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
-    "emitDeclarationOnly": true
   }
 }

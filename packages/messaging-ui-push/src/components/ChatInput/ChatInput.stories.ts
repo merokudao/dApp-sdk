@@ -16,15 +16,6 @@ const handleSendMessage = (message:any) => {
   action('Event ')(message);
 };
 
-const customStyles = {
-  containerStyle: {},
-  chatItemStyle: {},
-  profilePictureStyle:{},
-  chatNameStyle: {},
-  chatTimestampStyle:{},
-  chatMessageStyle: {}
-};
-
 export const Input: Story = {
   args: {
     placeholder:`Type a message...`,
