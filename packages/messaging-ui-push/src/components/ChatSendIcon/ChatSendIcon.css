@@ -1,0 +1,9 @@
+.send-button {
+  padding: 7px 10px;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
