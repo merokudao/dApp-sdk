@@ -8670,6 +8670,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"videochat-interface@workspace:packages/videochat-interface":
+  version: 0.0.0-use.local
+  resolution: "videochat-interface@workspace:packages/videochat-interface"
+  languageName: unknown
+  linkType: soft
+
+"videochat-push@workspace:packages/videochat-push":
+  version: 0.0.0-use.local
+  resolution: "videochat-push@workspace:packages/videochat-push"
+  languageName: unknown
+  linkType: soft
+
 "walker@npm:^1.0.8":
   version: 1.0.8
   resolution: "walker@npm:1.0.8"
