@@ -1,0 +1,19 @@
+{
+  "name": "videochat-interface",
+  "version": "1.0.0",
+  "description": "Push Video chat SDK for dapp-sdk package",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "tsc"
+  },
+  "keywords": [
+    "push",
+    "merokudao",
+    "meroku",
+    "dappstore",
+    "pushvideo"
+  ],
+  "author": "Push Protocol",
+  "license": "MIT"
+}
