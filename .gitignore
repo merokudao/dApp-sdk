@@ -16,3 +16,5 @@ packages/**/*/dist
 .vscode
 .yarnrc.yml
 .yarnrc.yml
+.pnp.cjs
+.pnp.loader.mjs

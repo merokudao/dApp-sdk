@@ -1,0 +1,29 @@
+{
+  "name": "@dapp-sdk/spaces-huddle01",
+  "description": "Audio Spaces Huddle01 SDK",
+  "version": "0.0.0",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "author": "@thxvatsal",
+  "scripts": {
+    "build": "tsc"
+  },
+  "license": "MIT",
+  "keywords": [
+    "audiospaces",
+    "dapp",
+    "sdk",
+    "interface",
+    "huddle01",
+    "meroku"
+  ],
+  "devDependencies": {
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "@dapp-sdk/huddle01-interfaces": "*",
+    "@huddle01/web-core": "^0.0.15",
+    "axios": "^1.5.0"
+  }
+}
