@@ -3397,6 +3397,12 @@ __metadata:
   languageName: node
   linkType: hard
 
+"core@workspace:packages/core":
+  version: 0.0.0-use.local
+  resolution: "core@workspace:packages/core"
+  languageName: unknown
+  linkType: soft
+
 "cross-fetch@npm:^4.0.0":
   version: 4.0.0
   resolution: "cross-fetch@npm:4.0.0"
