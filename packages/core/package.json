@@ -1,11 +1,22 @@
 {
-  "name": "core",
+  "name": "@dapp-sdk/core",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.ts",
+  "description": "Core package for users for dApp SDK",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc"
   },
+  "keywords": [
+    "meroku",
+    "dapp-sdk",
+    "core"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dist/**/*"
+  ],
   "author": "",
   "license": "ISC"
 }

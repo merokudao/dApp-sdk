@@ -1,6 +1,6 @@
-import * as PushAPI from "@pushprotocol/restapi";
+import { User } from "../../core/index";
 
-abstract class AbstractMessaging{
+abstract class AbstractMessaging extends User {
     abstract createUser(
         userInput: object | any
       ): void;

@@ -491,6 +491,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@dapp-sdk/core@workspace:packages/core":
+  version: 0.0.0-use.local
+  resolution: "@dapp-sdk/core@workspace:packages/core"
+  languageName: unknown
+  linkType: soft
+
 "@dapp-sdk/finance-interface@1.0.0, @dapp-sdk/finance-interface@workspace:packages/finance-interface":
   version: 0.0.0-use.local
   resolution: "@dapp-sdk/finance-interface@workspace:packages/finance-interface"
@@ -3396,12 +3402,6 @@ __metadata:
   checksum: 7a4c925b497a2c91421e25bf76d6d8190f0b2359a9200dbeed136e63b2931d6294d3b1893eda378883ed363cd950f44a12a401384c609839ea616befb7927dab
   languageName: node
   linkType: hard
-
-"core@workspace:packages/core":
-  version: 0.0.0-use.local
-  resolution: "core@workspace:packages/core"
-  languageName: unknown
-  linkType: soft
 
 "cross-fetch@npm:^4.0.0":
   version: 4.0.0
