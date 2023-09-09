@@ -1,7 +1,7 @@
 {
   "name": "@dapp-sdk/core",
   "version": "1.0.0",
-  "description": "Core package for users for dApp SDK",
+  "description": "The core components for dApp-SDK. These are required by almost every other package",
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc"
