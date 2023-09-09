@@ -492,7 +492,7 @@ __metadata:
   linkType: soft
 
 "@dapp-sdk/core@workspace:packages/core":
-  version: 0.0.0-use.local
+  version: 1.0.0
   resolution: "@dapp-sdk/core@workspace:packages/core"
   languageName: unknown
   linkType: soft

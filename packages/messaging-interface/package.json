@@ -1,7 +1,7 @@
 {
   "name": "@dapp-sdk/messaging-interface",
   "description": "Messaging Interface for dApp SDK",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "scripts": {
     "build": "tsc"
