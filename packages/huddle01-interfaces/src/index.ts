@@ -1,4 +1,4 @@
-import AudioSpacesInterface from './SpacesInterface';
-import MeetInterface from './MeetInterface';
+import AudioSpacesInterface from './AudioSpacesInterface';
+import VideoMeetInterface from './VideoMeetInterface';
 
-export { AudioSpacesInterface, MeetInterface };
+export { AudioSpacesInterface, VideoMeetInterface };

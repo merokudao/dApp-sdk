@@ -1,15 +1,14 @@
 import axios, { isAxiosError } from 'axios';
-import { MeetInterface } from '../../huddle01-interfaces/dist';
+import { AudioSpacesInterface } from '../../huddle01-interfaces/dist';
 import { TRoomControls } from '../../huddle01-interfaces/dist/SpacesInterface';
 import { IPeer, huddleClient } from '@huddle01/web-core';
 
-interface ICreateMeet {
+interface ICreateSpaces {
   title: string;
   hostWallets: string[];
   apiKey: string;
 }
-
-interface ICreateMeetResponse {
+interface ICreateSpacesResponse {
   message: string;
   data: {
     roomId: string;
@@ -17,10 +16,14 @@ interface ICreateMeetResponse {
   };
 }
 
-export default class VideoMeetClient extends MeetInterface {
-  public static async createMeet({ apiKey, hostWallets, title }: ICreateMeet) {
+export default class AudioSpacesClient extends AudioSpacesInterface {
+  public static async createMeet({
+    apiKey,
+    hostWallets,
+    title,
+  }: ICreateSpaces) {
     try {
-      const { data } = await axios.request<ICreateMeetResponse>({
+      const { data } = await axios.request<ICreateSpacesResponse>({
         method: 'POST',
         url: 'https://api.huddle01.com/api/v1/create-room',
         headers: {
@@ -30,6 +33,7 @@ export default class VideoMeetClient extends MeetInterface {
         data: {
           title,
           hostWallets,
+          roomType: 'AUDIO',
         },
       });
 
@@ -56,23 +60,23 @@ export default class VideoMeetClient extends MeetInterface {
     huddleClient.initialize(projectId);
   }
 
-  public joinLobby(roomId: string) {
-    huddleClient.joinLobby(roomId);
+  public joinLobby(spaceId: string) {
+    huddleClient.joinLobby(spaceId);
   }
 
   public leaveLobby() {
     huddleClient.leaveLobby();
   }
 
-  public joinMeet() {
-    huddleClient.joinRoom(true);
+  public joinSpace() {
+    huddleClient.joinRoom();
   }
 
-  public leaveMeet(): void {
+  public leaveSpace(): void {
     huddleClient.leaveRoom();
   }
 
-  public endMeet(): void {
+  public endSpace(): void {
     huddleClient.endRoom();
   }
 
@@ -86,7 +90,10 @@ export default class VideoMeetClient extends MeetInterface {
     huddleClient.stopAudioStream();
   }
 
-  public produceAudio(micStream: MediaStream, peerIds?: string[]): void {
+  public produceAudio(
+    micStream: MediaStream,
+    peerIds?: string[] | undefined
+  ): void {
     huddleClient.produceAudio(micStream, peerIds);
   }
 
@@ -104,39 +111,6 @@ export default class VideoMeetClient extends MeetInterface {
 
   public closeMicConsumer(peerId: string): void {
     huddleClient.closeMicConsumer(peerId);
-  }
-
-  public async fetchVideoStream(
-    deviceId?: string | undefined
-  ): Promise<MediaStream> {
-    return await huddleClient.fetchVideoStream(deviceId);
-  }
-
-  public stopVideoStream(): void {
-    huddleClient.stopVideoStream();
-  }
-
-  public produceVideo(
-    camStream: MediaStream,
-    peerIds?: string[] | undefined
-  ): void {
-    huddleClient.produceVideo(camStream, peerIds);
-  }
-
-  public stopProducingVideo(): void {
-    huddleClient.stopProducingVideo();
-  }
-
-  public async enumerateCamDevices(): Promise<MediaDeviceInfo[]> {
-    return await huddleClient.enumerateCamDevices();
-  }
-
-  public createCamConsumer(peerId: string): void {
-    huddleClient.createCamConsumer(peerId);
-  }
-
-  public closeCamConsumer(peerId: string): void {
-    huddleClient.closeCamConsumer(peerId);
   }
 
   public getPeer(peerId: string): IPeer {
@@ -174,10 +148,24 @@ export default class VideoMeetClient extends MeetInterface {
     huddleClient.sendData(peerIds, data);
   }
 
+  public createSpeaker(peerId: string): void {
+    huddleClient.changePeerRole({
+      peerId,
+      role: 'speaker',
+    });
+  }
+
+  public createListener(peerId: string): void {
+    huddleClient.changePeerRole({
+      peerId,
+      role: 'listener',
+    });
+  }
+
   public createCohost(peerId: string): void {
     huddleClient.changePeerRole({
       peerId,
-      role: 'cohost',
+      role: 'coHost',
     });
   }
 

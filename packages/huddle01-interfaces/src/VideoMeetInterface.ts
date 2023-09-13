@@ -1,23 +1,16 @@
 import { IPeer } from '@huddle01/web-core';
+import { TRoomControls } from './AudioSpacesInterface';
 
-export type TRoomControls =
-  | 'audioLocked'
-  | 'videoLocked'
-  | 'screenShareLocked'
-  | 'chatLocked'
-  | 'disableSounds'
-  | 'muteEveryone';
-
-export default abstract class AudioSpacesInterface {
+export default abstract class VideoMeetInterface {
   abstract joinLobby(spaceId: string): void;
 
   abstract leaveLobby(): void;
 
-  abstract joinSpace(): void;
+  abstract joinMeet(): void;
 
-  abstract leaveSpace(): void;
+  abstract leaveMeet(): void;
 
-  abstract endSpace(): void;
+  abstract endMeet(): void;
 
   abstract fetchAudioStream(deviceId?: string): Promise<MediaStream>;
 
@@ -32,6 +25,20 @@ export default abstract class AudioSpacesInterface {
   abstract createMicConsumer(peerId: string): void;
 
   abstract closeMicConsumer(peerId: string): void;
+
+  abstract fetchVideoStream(deviceId?: string): Promise<MediaStream>;
+
+  abstract stopVideoStream(): void;
+
+  abstract produceVideo(camStream: MediaStream, peerIds?: string[]): void;
+
+  abstract stopProducingVideo(): void;
+
+  abstract enumerateCamDevices(): Promise<MediaDeviceInfo[]>;
+
+  abstract createCamConsumer(peerId: string): void;
+
+  abstract closeCamConsumer(peerId: string): void;
 
   abstract getPeer(peerId: string): IPeer;
 
@@ -51,10 +58,6 @@ export default abstract class AudioSpacesInterface {
   abstract setAvatar(avatarUrl: string): void;
 
   abstract sendData(peerIds: string[] | '*', data: unknown): void;
-
-  abstract createSpeaker(peerId: string): void;
-
-  abstract createListener(peerId: string): void;
 
   abstract createCohost(peerId: string): void;
 

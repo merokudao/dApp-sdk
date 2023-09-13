@@ -1,14 +1,15 @@
 import axios, { isAxiosError } from 'axios';
-import { AudioSpacesInterface } from '../../huddle01-interfaces/dist';
-import { TRoomControls } from '../../huddle01-interfaces/dist/SpacesInterface';
+import { MeetInterface } from '../../huddle01-interfaces/dist';
+import { TRoomControls } from '../../huddle01-interfaces/dist/AudioSpacesInterface';
 import { IPeer, huddleClient } from '@huddle01/web-core';
 
-interface ICreateSpaces {
+interface ICreateMeet {
   title: string;
   hostWallets: string[];
   apiKey: string;
 }
-interface ICreateSpacesResponse {
+
+interface ICreateMeetResponse {
   message: string;
   data: {
     roomId: string;
@@ -16,14 +17,10 @@ interface ICreateSpacesResponse {
   };
 }
 
-export default class AudioSpacesClient extends AudioSpacesInterface {
-  public static async createMeet({
-    apiKey,
-    hostWallets,
-    title,
-  }: ICreateSpaces) {
+export default class VideoMeetClient extends MeetInterface {
+  public static async createMeet({ apiKey, hostWallets, title }: ICreateMeet) {
     try {
-      const { data } = await axios.request<ICreateSpacesResponse>({
+      const { data } = await axios.request<ICreateMeetResponse>({
         method: 'POST',
         url: 'https://api.huddle01.com/api/v1/create-room',
         headers: {
@@ -33,7 +30,6 @@ export default class AudioSpacesClient extends AudioSpacesInterface {
         data: {
           title,
           hostWallets,
-          roomType: 'AUDIO',
         },
       });
 
@@ -60,23 +56,23 @@ export default class AudioSpacesClient extends AudioSpacesInterface {
     huddleClient.initialize(projectId);
   }
 
-  public joinLobby(spaceId: string) {
-    huddleClient.joinLobby(spaceId);
+  public joinLobby(roomId: string) {
+    huddleClient.joinLobby(roomId);
   }
 
   public leaveLobby() {
     huddleClient.leaveLobby();
   }
 
-  public joinSpace() {
-    huddleClient.joinRoom();
+  public joinMeet() {
+    huddleClient.joinRoom(true);
   }
 
-  public leaveSpace(): void {
+  public leaveMeet(): void {
     huddleClient.leaveRoom();
   }
 
-  public endSpace(): void {
+  public endMeet(): void {
     huddleClient.endRoom();
   }
 
@@ -90,10 +86,7 @@ export default class AudioSpacesClient extends AudioSpacesInterface {
     huddleClient.stopAudioStream();
   }
 
-  public produceAudio(
-    micStream: MediaStream,
-    peerIds?: string[] | undefined
-  ): void {
+  public produceAudio(micStream: MediaStream, peerIds?: string[]): void {
     huddleClient.produceAudio(micStream, peerIds);
   }
 
@@ -111,6 +104,39 @@ export default class AudioSpacesClient extends AudioSpacesInterface {
 
   public closeMicConsumer(peerId: string): void {
     huddleClient.closeMicConsumer(peerId);
+  }
+
+  public async fetchVideoStream(
+    deviceId?: string | undefined
+  ): Promise<MediaStream> {
+    return await huddleClient.fetchVideoStream(deviceId);
+  }
+
+  public stopVideoStream(): void {
+    huddleClient.stopVideoStream();
+  }
+
+  public produceVideo(
+    camStream: MediaStream,
+    peerIds?: string[] | undefined
+  ): void {
+    huddleClient.produceVideo(camStream, peerIds);
+  }
+
+  public stopProducingVideo(): void {
+    huddleClient.stopProducingVideo();
+  }
+
+  public async enumerateCamDevices(): Promise<MediaDeviceInfo[]> {
+    return await huddleClient.enumerateCamDevices();
+  }
+
+  public createCamConsumer(peerId: string): void {
+    huddleClient.createCamConsumer(peerId);
+  }
+
+  public closeCamConsumer(peerId: string): void {
+    huddleClient.closeCamConsumer(peerId);
   }
 
   public getPeer(peerId: string): IPeer {
@@ -148,24 +174,10 @@ export default class AudioSpacesClient extends AudioSpacesInterface {
     huddleClient.sendData(peerIds, data);
   }
 
-  public createSpeaker(peerId: string): void {
-    huddleClient.changePeerRole({
-      peerId,
-      role: 'speaker',
-    });
-  }
-
-  public createListener(peerId: string): void {
-    huddleClient.changePeerRole({
-      peerId,
-      role: 'listener',
-    });
-  }
-
   public createCohost(peerId: string): void {
     huddleClient.changePeerRole({
       peerId,
-      role: 'cohost',
+      role: 'coHost',
     });
   }
 

@@ -1,9 +1,0 @@
-{
-  "extends": "../tsconfig/corelib.json",
-  "include": ["./src/**/*.ts", "./index.ts"],
-  "exclude": ["./dist", "./build", "./node_modules"],
-  "compilerOptions": {
-    "outDir": "dist",
-    "strictPropertyInitialization": false
-  }
-}

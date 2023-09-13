@@ -616,20 +616,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@dapp-sdk/spaces-huddle01@workspace:packages/spaces-huddle01":
+"@dapp-sdk/spaces-huddle01@workspace:packages/messaging-huddle01":
   version: 0.0.0-use.local
-  resolution: "@dapp-sdk/spaces-huddle01@workspace:packages/spaces-huddle01"
-  dependencies:
-    "@dapp-sdk/huddle01-interfaces": "*"
-    "@huddle01/web-core": ^0.0.15
-    axios: ^1.5.0
-    typescript: ^5.1.6
-  languageName: unknown
-  linkType: soft
-
-"@dapp-sdk/videomeet-huddle01@workspace:packages/videomeet-huddle01":
-  version: 0.0.0-use.local
-  resolution: "@dapp-sdk/videomeet-huddle01@workspace:packages/videomeet-huddle01"
+  resolution: "@dapp-sdk/spaces-huddle01@workspace:packages/messaging-huddle01"
   dependencies:
     "@dapp-sdk/huddle01-interfaces": "*"
     "@huddle01/web-core": ^0.0.15
