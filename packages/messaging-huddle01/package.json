@@ -1,7 +1,7 @@
 {
   "name": "@dapp-sdk/messaging-huddle01",
   "description": "Audio Video Module by Huddle01",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",

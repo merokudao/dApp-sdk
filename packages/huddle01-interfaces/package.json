@@ -2,8 +2,9 @@
   "name": "@dapp-sdk/huddle01-interfaces",
   "description": "Interface for Videomeet",
   "version": "1.0.0",
-  "main": "index.js",
-  "types": "index.d.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "module": "dist/index.js",
   "author": "@thxvatsal",
   "scripts": {
     "build": "tsc"
