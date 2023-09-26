@@ -3,7 +3,7 @@
   "display": "Default",
   "compilerOptions": {
     "target": "es6",
-    "module": "commonjs",
+    "module": "NodeNext",
     "composite": false,
     "declaration": true,
     "declarationMap": true,
@@ -12,7 +12,7 @@
     "rootDirs": ["./src"],
     "inlineSources": false,
     "isolatedModules": true,
-    "moduleResolution": "nodenext",
+    "moduleResolution": "NodeNext",
     "noUnusedLocals": false,
     "noUnusedParameters": false,
     "preserveWatchOutput": true,
