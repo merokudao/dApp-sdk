@@ -9,7 +9,8 @@
     "turbo": "^1.10.7"
   },
   "dependencies": {
-    "@yarnpkg/plugin-dlx": "^4.0.0-rc.48"
+    "@yarnpkg/plugin-dlx": "^4.0.0-rc.48",
+    "typescript": "^5.2.2"
   },
   "workspaces": [
     "packages/*"
@@ -18,7 +19,7 @@
     "@types/react": "18.2.14",
     "@types/react-dom": "18.2.6"
   },
-  "packageManager": "yarn@3.6.2",
+  "packageManager": "yarn@3.6.3",
   "scripts": {
     "build": "turbo run build",
     "clean:node_modules": "find . -name 'node_modules' -type d -prune -exec rm -rf '{}' +",
