@@ -14,7 +14,7 @@ do
         echo "${PACKAGE_NAME}@${PACKAGE_VERSION} is already published. Skipping."
     else
         echo "${PACKAGE_NAME}@${PACKAGE_VERSION} is not yet published. Publishing now."
-        npm publish
+        npm publish --access public
     fi
     cd ../..
 done
