@@ -7,5 +7,7 @@
   "exclude": ["./dist", "./build", "./node_modules"],
   "compilerOptions": {
     "outDir": "dist",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext"
   }
 }

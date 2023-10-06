@@ -1,0 +1,22 @@
+{
+  "name": "@dapp-sdk/core",
+  "version": "1.0.0",
+  "description": "The core components for dApp-SDK. These are required by almost every other package",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": [
+    "meroku",
+    "dapp-sdk",
+    "core"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dist/**/*"
+  ],
+  "author": "",
+  "license": "MIT"
+}

@@ -1,6 +1,6 @@
 {
   "name": "@dapp-sdk/messaging-push",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "author": "Push Protocol",
   "description": "Push Protocol Implementation for Messaging in dapp-sdk",
   "main": "dist/messaging-push/src/index.js",

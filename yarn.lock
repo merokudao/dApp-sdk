@@ -491,6 +491,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@dapp-sdk/core@workspace:packages/core":
+  version: 1.0.0
+  resolution: "@dapp-sdk/core@workspace:packages/core"
+  languageName: unknown
+  linkType: soft
+
 "@dapp-sdk/finance-interface@1.0.0, @dapp-sdk/finance-interface@workspace:packages/finance-interface":
   version: 0.0.0-use.local
   resolution: "@dapp-sdk/finance-interface@workspace:packages/finance-interface"

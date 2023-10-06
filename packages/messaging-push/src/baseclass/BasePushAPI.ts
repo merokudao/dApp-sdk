@@ -5,8 +5,9 @@ import {
   conversationHashResponse,
 } from "../interfaces/pushinterfaces";
 import AbstractMessaging from "../../../messaging-interface/src/index";
+import {User} from "../../../core/index"
 
-export class BasePushAPI extends AbstractMessaging {
+export class BasePushAPI extends User {
     config: IConfig;
     constructor(config: IConfig) {
         super();
