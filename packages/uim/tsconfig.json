@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "incremental": true,            
+    "target": "es5",                
+    "module": "NodeNext",           
+    "declaration": true,            
+    "outDir": "dist",                
+    "esModuleInterop": true,        
+    "skipLibCheck": true,          
+    "forceConsistentCasingInFileNames": true,
+    "lib": [
+      "ES2015"
+    ]
+  },
+  "include": [
+    "src"
+  ]
+}
