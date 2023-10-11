@@ -1,6 +1,6 @@
 {
-  "name": "@dapp-sdk/messaging-huddle01",
-  "description": "Audio Video Module by Huddle01",
+  "name": "@dapp-sdk/audiospace-huddle01",
+  "description": "Audio Spaces Module by Huddle01",
   "version": "1.0.0",
   "main": "dist/index.js",
   "module": "dist/index.js",
