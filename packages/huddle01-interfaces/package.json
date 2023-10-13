@@ -23,5 +23,8 @@
   },
   "dependencies": {
     "@huddle01/web-core": "^0.0.15"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
