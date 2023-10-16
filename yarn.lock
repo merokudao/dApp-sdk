@@ -644,17 +644,6 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@dapp-sdk/videomeet-huddle01@workspace:packages/videomeet-huddle01":
-  version: 0.0.0-use.local
-  resolution: "@dapp-sdk/videomeet-huddle01@workspace:packages/videomeet-huddle01"
-  dependencies:
-    "@dapp-sdk/huddle01-interfaces": "*"
-    "@huddle01/web-core": ^0.0.15
-    axios: ^1.5.0
-    typescript: ^5.1.6
-  languageName: unknown
-  linkType: soft
-
 "@dapp-sdk/uim@workspace:packages/uim":
   version: 0.0.0-use.local
   resolution: "@dapp-sdk/uim@workspace:packages/uim"
@@ -663,6 +652,17 @@ __metadata:
     "@types/node": ^20.8.2
     axios: ^1.5.1
     dotenv: ^16.3.1
+  languageName: unknown
+  linkType: soft
+
+"@dapp-sdk/videomeet-huddle01@workspace:packages/videomeet-huddle01":
+  version: 0.0.0-use.local
+  resolution: "@dapp-sdk/videomeet-huddle01@workspace:packages/videomeet-huddle01"
+  dependencies:
+    "@dapp-sdk/huddle01-interfaces": "*"
+    "@huddle01/web-core": ^0.0.15
+    axios: ^1.5.0
+    typescript: ^5.1.6
   languageName: unknown
   linkType: soft
 
