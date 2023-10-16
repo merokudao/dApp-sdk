@@ -3,7 +3,7 @@ import {
   AudioSpacesInterface,
   TRoomControls,
 } from '@dapp-sdk/huddle01-interfaces';
-import { IPeer, huddleClient } from '@huddle01/web-core';
+import { IPeer, TEvents, huddleClient } from '@huddle01/web-core';
 
 /**
  * @description Interface for the response of creating a new audio space
@@ -302,5 +302,16 @@ export default class AudioSpacesClient extends AudioSpacesInterface {
    */
   public kickPeer(peerId: string): void {
     huddleClient.kickPeer(peerId);
+  }
+
+  on<TKey extends keyof TEvents>(
+    events: TKey,
+    cb: (...args: TEvents[TKey]) => void
+  ) {
+    huddleClient.on(events, cb);
+  }
+
+  emit<TKey extends keyof TEvents>(event: TKey, ...args: TEvents[TKey]) {
+    huddleClient.emit(event, ...args);
   }
 }
