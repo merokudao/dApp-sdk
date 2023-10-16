@@ -654,8 +654,8 @@ __metadata:
     typescript: ^5.1.6
   languageName: unknown
   linkType: soft
- 
- "@dapp-sdk/uim@workspace:packages/uim":
+
+"@dapp-sdk/uim@workspace:packages/uim":
   version: 0.0.0-use.local
   resolution: "@dapp-sdk/uim@workspace:packages/uim"
   dependencies:
