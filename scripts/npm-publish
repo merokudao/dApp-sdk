@@ -1,6 +1,6 @@
 #!/bin/bash
 
-PACKAGES_TO_PUBLISH=("analytics" "analytics-dapplooker" "analytics-interface" "analytics-ui" "analytics-ui-interface" "analytics-ui-dapplooker" "finance" "finance-transak" "messaging" "messaging-interface" "messaging-push" "messaging-huddle01")
+PACKAGES_TO_PUBLISH=("analytics" "analytics-dapplooker" "analytics-interface" "analytics-ui" "analytics-ui-interface" "analytics-ui-dapplooker" "finance" "finance-transak" "messaging" "messaging-interface" "messaging-push" "videomeet-huddle01" "audiospace-huddle01" "huddle01-interfaces")
 
 for PACKAGE in "${PACKAGES_TO_PUBLISH[@]}"
 do
