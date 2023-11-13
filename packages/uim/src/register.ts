@@ -39,8 +39,11 @@ export async function registerUser(username: string,origin:string): Promise<stri
 
   try {
     response = await axios.post(
-      `${BASE_URL}/register`,
-      payload
+      `${BASE_URL}/userIntention`,
+      {
+        userIntent: "register",
+        payload
+      }
     );
 
     return JSON.stringify(response.data);

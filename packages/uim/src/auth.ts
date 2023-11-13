@@ -29,8 +29,9 @@ export async function authenticateUser(username: string, origin:string): Promise
       });
 
       const authResponse: ResponseInterface = await axios.post(
-        `${BASE_URL}/authenticate`,
+        `${BASE_URL}/userIntention`,
         {
+          userIntent: "login",
           challenge,
           authentication,
           origin
