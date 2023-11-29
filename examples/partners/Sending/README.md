@@ -30,6 +30,6 @@ In addition, we offer a website chat widget that is customizable and can be easi
 
 [Documentation](https://sending-network.gitbook.io/sending.network/): learn how to build with SendingNetwork
 
-[SendingMe](https://app.sending.me/): community-oriented IM built on top of SendingNetwork
+[SendingMe](https://chat.sending.me/): community-oriented IM built on top of SendingNetwork
 
 [SendingNetwork website](https://www.sending.network/)
